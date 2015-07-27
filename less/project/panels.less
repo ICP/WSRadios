@@ -29,6 +29,17 @@
     &._bg-gray { background: @gray; }
     
     /*! Boxes */
+    &.ticker {
+	line-height: 40px; margin-bottom: 0; height: 40px; overflow: hidden;
+	.panel-title { width: 160px; float: left; font-size: 12px; font-weight: bold; clear: left; text-overflow: ellipsis; white-space: nowrap; }
+	.panel-body { max-height: 40px; margin-left: 160px; clear: none; }
+	ul {
+	    margin: 0; padding: 0; list-style: none;
+	    li {
+		font-size: 12px;
+	    }
+	}
+    }
     &.news {
 	.panel-heading {
 	    padding: 0; font-weight: bold; font-family: Arial; text-transform: uppercase;
@@ -44,13 +55,46 @@
 	}
 	.desc {
 	    h3 {
-		margin: 10px 0 16px; font-size: 16px; font-weight: bold;
+		margin: 0 0 16px; font-size: 16px; font-weight: bold;
 		a {
-		    color: @text-color; transition: all 0.2s;
+		    display: inline-block; color: @text-color; transition: all 0.2s; padding-top: 10px;
 		    &:hover { color: #000; text-decoration: none; }
 		}
 	    }
 	    p { color: @newsDescTextColor; }
+	}
+    }
+    &.slider {
+	padding: @grid-gutter-width / 2; padding-bottom: @grid-gutter-width;
+	.pages {
+	    height: 0; overflow: visible;
+	}
+	.items {
+	    padding: 0 @grid-gutter-width / 2;
+	    ul {
+		li {
+		    float: left; width: 185px; padding: 0;
+		    & ~ li { margin-left: @grid-gutter-width / 2; }
+		    &:hover, &.active {
+			figure {
+			    & > a, & > img { border: 2px solid #fff; }
+			    figcaption {
+				&, a { color: #fff; }
+			    }
+			}
+		    }
+		    figure {
+			& > a, & > img { border: 2px solid @gray; }
+			figcaption {
+			    font-weight: bold;
+			    a {
+				color: @lightGray; display: block;
+				&:hover { text-decoration: none; }
+			    }
+			}
+		    }
+		}
+	    }
 	}
     }
 }
