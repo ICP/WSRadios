@@ -14,6 +14,9 @@
     .panel-footer {
 	margin-top: 10px;
     }
+    .panel {
+	margin-bottom: 0;
+    }
     .more {
 	display: inline-block; color: @moreColor; font-weight: bold;
 	&:hover { color: @link-color; }
@@ -66,8 +69,13 @@
     }
     &.slider {
 	padding: @grid-gutter-width / 2; padding-bottom: @grid-gutter-width;
-	.pages {
-	    height: 0; overflow: visible;
+	.pager {
+	    height: 0; overflow: visible; position: absolute; top: 50%; left: 0; width: 100%; margin-top: -16px;
+	    a {
+		color: @lightGray; float: left; display: block; font-size: 28px; line-height: 32px; margin-left: -(@grid-gutter-width /2);
+		&:hover { color: #fff; }
+		&.next { float: right; margin-left: 0; margin-right: -(@grid-gutter-width /2); }
+	    }
 	}
 	.items {
 	    padding: 0 @grid-gutter-width / 2;
@@ -84,15 +92,25 @@
 			}
 		    }
 		    figure {
-			& > a, & > img { border: 2px solid @gray; }
+			& > a, & > img { border: 2px solid @gray; transition: all 0.2s; }
 			figcaption {
 			    font-weight: bold;
 			    a {
 				color: @lightGray; display: block;
-				&:hover { text-decoration: none; }
+				&:hover { text-decoration: none; transition: all 0.2s; }
 			    }
 			}
 		    }
+		}
+	    }
+	}
+    }
+    &.digest {
+	&.thumbs {
+	    ul {
+		li {
+		    width: 406px; float: none; display: inline-block; vertical-align: top; padding: 0;
+		    &:nth-child(2n) { margin-left: @grid-gutter-width; }
 		}
 	    }
 	}
