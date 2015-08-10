@@ -7,7 +7,7 @@
 	a {  }
     }
     .panel-heading {
-	margin: 0 0 14px; text-transform: uppercase;
+	margin: 0 0 14px; text-transform: uppercase; border-radius: 0;
     }
     .panel-body {
     }
@@ -30,6 +30,14 @@
 	}
     }
     &._bg-gray { background: @gray; }
+    &.title-navy {
+	.panel-heading {
+	    background: @navy; font-size: 14px; font-weight: bold; line-height: 14px; padding: 0;
+	    a {
+		color: #fff;  display: block; padding: 10px;
+	    }
+	}
+    }
 
     /*! Boxes */
     &.ticker {
@@ -192,6 +200,41 @@
 			color: @text-color;
 			&:hover { text-decoration: none; }
 		    }
+		}
+	    }
+	}
+    }
+    &.live-links {
+	.panel-body {
+	    background: @lightBlue;
+	    ul {
+		padding: 10px 10px 0 10px;
+		li {
+		    border-right: 1px solid #e3e8ec; padding: 0; margin: 0 0 10px 0; float: left; width: 33%;
+		    & ~ li { border-left: 1px solid #fbfcfc; }
+		    &:last-child { border-right: 0 none; }
+		    a {
+			font-size: 11px; font-weight: bold; color: #000; display: block; transition: all 0.2s;
+			&:hover { text-decoration: none; color: lighten(#000, 30%); }
+			i { font-size: 42px; display: block; line-height: 42px; }
+		    }
+		}
+	    }
+	}
+    }
+    &.schedule {
+	&.schedule-condensed {
+	    .panel-heading { margin-bottom: 3px; }
+	    ul {
+		li {
+		    background: @lightGray; padding: 20px 10px; margin-bottom: 1px;
+		    &:hover, &.current { background: @mediumGray; }
+		    a {
+			color: @text-color; display: block;
+		    }
+		    span { display: block; }
+		    .title { font-weight: bold; }
+		    .time { font-size: 12px; color: @gray; }
 		}
 	    }
 	}
