@@ -117,8 +117,23 @@
 			a { background: none; border-color: @red; }
 		    }
 		    a {
-			border-radius: 0; font-size: 12px; font-weight: bold; color: @text-color; border: 0 none; border-bottom: 4px solid transparent; margin-bottom: -3px;
+			border-radius: 0; font-size: 12px; font-weight: bold; color: @text-color; border: 0 none; border-bottom: 4px solid transparent; margin-bottom: -4px;
 			&:hover { text-decoration: none; }
+		    }
+		}
+	    }
+	}
+	&.tab-buttons {
+	    .panel-title {
+		ul {
+		    border-bottom: 0 none;
+		    li {
+			&:hover, &.active {
+			    a { background: @sectionColor; border: 0 none; }
+			}
+			a {
+			    margin-bottom: 0; border: 0 none; color: #fff; background: @lightGray; line-height: 25px; padding: 0 10px; min-width: 85px; text-align: center;
+			}
 		    }
 		}
 	    }
