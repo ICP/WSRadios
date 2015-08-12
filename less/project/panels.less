@@ -86,9 +86,10 @@
 	.pager {
 	    height: 0; overflow: visible; position: absolute; top: 50%; left: 0; width: 100%; margin-top: -16px;
 	    a {
-		color: @lightGray; float: left; display: block; font-size: 28px; line-height: 32px; margin-left: -(@grid-gutter-width /2);
+		color: @lightGray; float: left; display: block; font-size: 28px; line-height: 32px; margin-left: -(@grid-gutter-width /2); width: 30px; text-align: center;
 		&:hover { color: #fff; }
 		&.next { float: right; margin-left: 0; margin-right: -(@grid-gutter-width /2); }
+		& > i:before { width: auto; }
 	    }
 	}
 	.items {
@@ -248,7 +249,9 @@
 	
     }
     &.exlinks {
-	
+	.text {
+	    font-size: 12px; padding-right: 60px;
+	}
     }
     &.thisday {
 	
