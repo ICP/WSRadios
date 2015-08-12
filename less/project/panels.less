@@ -32,10 +32,15 @@
     &._bg-gray { background: @gray; }
     &.title-navy {
 	.panel-heading {
-	    background: @navy; font-size: 14px; font-weight: bold; line-height: 14px; padding: 0;
+	    background-color: @navy; font-size: 14px; font-weight: bold; line-height: 14px; padding: 0;
 	    a {
 		color: #fff;  display: block; padding: 10px;
 	    }
+	}
+    }
+    &.title-pattern {
+	.panel-heading {
+	    background-image: @patternHeader; background-repeat: repeat; background-position: center center;
 	}
     }
 
@@ -216,7 +221,7 @@
 		    a {
 			font-size: 11px; font-weight: bold; color: #000; display: block; transition: all 0.2s;
 			&:hover { text-decoration: none; color: lighten(#000, 30%); }
-			i { font-size: 42px; display: block; line-height: 42px; }
+			i { font-size: 36px; display: block; line-height: 36px; margin-bottom: 6px; }
 		    }
 		}
 	    }
@@ -227,7 +232,7 @@
 	    .panel-heading { margin-bottom: 3px; }
 	    ul {
 		li {
-		    background: @lightGray; padding: 20px 10px; margin-bottom: 1px;
+		    background: @lightGray; padding: 20px 10px; margin-bottom: 1px; transition: all 0.2s;
 		    &:hover, &.current { background: @mediumGray; }
 		    a {
 			color: @text-color; display: block;
@@ -238,5 +243,14 @@
 		}
 	    }
 	}
+    }
+    &.poll {
+	
+    }
+    &.exlinks {
+	
+    }
+    &.thisday {
+	
     }
 }
