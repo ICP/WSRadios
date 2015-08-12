@@ -139,6 +139,12 @@
       "src": "entypo"
     },
     {
+      "uid": "413717f5ea649e8d8b93938be277264a",
+      "css": "calendar",
+      "code": 59433,
+      "src": "entypo"
+    },
+    {
       "uid": "767fede84586366cd7d6c835be745454",
       "css": "mobile",
       "code": 59397,
@@ -176,7 +182,7 @@
     },
     {
       "uid": "b714be5a812a474811604f700dfc87ce",
-      "css": "left-open",
+      "css": "left",
       "code": 59410,
       "src": "mfglabs"
     },
@@ -196,6 +202,12 @@
       "uid": "1e2035b7cbaeb3d902cf9849e456069d",
       "css": "delicious",
       "code": 59423,
+      "src": "zocial"
+    },
+    {
+      "uid": "fe4b70ed76eb9a48877632032b33c942",
+      "css": "calendar2",
+      "code": 59434,
       "src": "zocial"
     },
     {
@@ -238,6 +250,12 @@
       "uid": "3849753858193b4d6e07afa834aff979",
       "css": "thumbs-down",
       "code": 59425,
+      "src": "elusive"
+    },
+    {
+      "uid": "fc006ff27e50163bdec3a7588226171b",
+      "css": "play-circled",
+      "code": 59432,
       "src": "elusive"
     },
     {
