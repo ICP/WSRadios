@@ -32,9 +32,9 @@
     &._bg-gray { background: @gray; }
     &.title-navy {
 	.panel-heading {
-	    background-color: @navy; font-size: 14px; font-weight: bold; line-height: 14px; padding: 0;
+	    background-color: @navy; font-size: 14px; font-weight: bold; line-height: 14px; padding: 0; color: #fff; text-indent: 10px; line-height: 34px;
 	    a {
-		color: #fff;  display: block; padding: 10px;
+		color: #fff;  display: block; 
 	    }
 	}
     }
@@ -178,6 +178,7 @@
 			    }
 			}
 		    }
+		    .date { display: block; color: @lightGray; font-size: 12px; font-weight: normal; line-height: 2; }
 		    &.featured {
 			display: block; margin: 0 0 @grid-gutter-width 0; width: 100%; min-height: 225px;
 			.img { width: @xLargeMainHalf; }
@@ -186,6 +187,15 @@
 			    h3 { font-size: 24px; font-weight: bold; }
 			    p { color: @gray; }
 			}
+		    }
+		}
+	    }
+	    &.list-condensed {
+		ul {
+		    li {
+			width: auto; margin-left: 0 !important; margin-bottom: (@grid-gutter-width / 3);
+			.img { width: (@xLargeMainHalf / 4); }
+			.desc { margin-left: (@xLargeMainHalf / 4) + (@grid-gutter-width / 4) }
 		    }
 		}
 	    }
@@ -233,7 +243,7 @@
 	    .panel-heading { margin-bottom: 3px; }
 	    ul {
 		li {
-		    background: @lightGray; padding: 20px 10px; margin-bottom: 1px; transition: all 0.2s;
+		    background: @PatternLight repeat center center #fff; padding: 12px 10px; margin-bottom: 1px; transition: all 0.2s;
 		    &:hover, &.current { background: @mediumGray; }
 		    a {
 			color: @text-color; display: block;
@@ -249,11 +259,27 @@
 	
     }
     &.exlinks {
-	.text {
-	    font-size: 12px; padding-right: 60px;
-	}
+	
     }
     &.thisday {
-	
+	.text {
+	    font-size: 12px; padding: (@grid-gutter-width / 3) 100px (@grid-gutter-width / 3) 0; position: relative; min-height: 80px;
+	    &:after { position: absolute; display: block; content: '\e829'; top: -12px; right: 0; font-family: "wsicons"; font-size: 68px; color: @lightGray; }
+	}
+    }
+    &.subscribe {
+	.panel-body {
+	    & > p { color: @gray; font-size: 12px; }
+	}
+	form {
+	    label { font-weight: normal; }
+	    .input-group {
+		background: @PatternLight; padding: 10px 8px;
+		.form-control { background: @lightBlue; font-size: 12px; color: @gray; }
+	    }
+	}
+    }
+    &.banner {
+	.panel-title, .panel-heading { margin-bottom: 2px; }
     }
 }
