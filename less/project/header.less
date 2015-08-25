@@ -33,20 +33,32 @@
 	li {
 	    float: left; padding: 0; position: relative;
 	    a {
-		color: #fff; display: block; line-height: 42px; padding: 0 20px 0 10px; transition: 0.2s all;
+		color: #fff; display: block; line-height: 42px; padding: 0 16px 0 16px; transition: 0.2s all; font-weight: bold; font-size: 13px;
 		&:hover { text-decoration: none; }
 	    }
 	    &.active, &:hover {
-		& > a { background: @menuHover; }
+		& > a {
+		    background: @menuHover;
+		    &:after { background: #c6222b; }
+		}
 	    }
 	    &:hover {
 		ul.child { display: block; transition: 0.2s all; }
+	    }
+	    &.haschild {
+		a {
+		    padding-right: 32px; position: relative;
+		    &:after { display: block; content: '\e811'; position: absolute; top: 0; right: 0; line-height: 42px; height: 42px; width: 16px; text-align: center; font-family: "wsicons"; font-size: 10px; transition: 0.2s all; }
+		}
 	    }
 	    ul.child {
 		position: absolute; top: 42px; left: 0; width: 300px; background: @darkBlue; list-style: none; padding: (@grid-gutter-width / 2); margin: 0; z-index: 100; transition: 0.2s all; display: none;
 		li {
 		    float: none; text-transform: none;
-		    a { line-height: 42px; padding: 0 10px; }
+		    a {
+			line-height: 42px; padding: 0 10px;
+			&:after { display: none; }
+		    }
 		    & ~ li { border-top: 1px solid @navy; }
 		    &:hover, &.active {
 			& > a { background: @navy; }

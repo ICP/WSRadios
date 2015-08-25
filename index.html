@@ -47,6 +47,28 @@
 								<ul class="menu-items list-unstyled list-inline">
 									<li>
 										<a href="#">Home</a>
+									</li>
+									<li class="haschild">
+										<a href="#">News</a>
+										<ul class="child">
+											<li><a href="#">Submenu</a></li>
+											<li><a href="#">Submenu 2</a></li>
+											<li><a href="#">Other Submenu</a></li>
+										</ul>
+									</li>
+									<li class="haschild active">
+										<a href="#">Menu Item</a>
+										<ul class="child">
+											<li><a href="#">Submenu</a></li>
+											<li><a href="#">Submenu 2</a></li>
+											<li><a href="#">Other Submenu</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Menu Item</a>
+									</li>
+									<li class="haschild">
+										<a href="#">Menu Item</a>
 										<ul class="child">
 											<li><a href="#">Submenu</a></li>
 											<li><a href="#">Submenu 2</a></li>
@@ -61,15 +83,6 @@
 			</div>
 		</header>
 		<section id="main">
-			<div class="wrapper _white">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							radio
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="wrapper _light-blue _border-top _border-bottom">
 				<div class="container">
 					<div class="row">
@@ -637,7 +650,20 @@
 									<a href="#">Links</a>
 								</h3>
 								<div class="panel-body">
-									{{Links}}
+									<ul class="list-unstyled">
+										<li>
+											<a href="#" target="_blank">
+												<span class="title">Site Title</span>
+												<span class="url">www.google.com</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" target="_blank">
+												<span class="title">Site Title</span>
+												<span class="url">http://yahoo.com</span>
+											</a>
+										</li>
+									</ul>
 								</div>
 							</div>
 							<div class="panel thisday title-pattern title-navy">
@@ -700,6 +726,14 @@
 									</figure>
 								</div>
 							</div>
+							<div class="panel sms _bg-blue">
+								<div class="panel-body">
+									<div class="inner">
+										<p>Send us SMS so we can keep in touch.</p>
+										<div class="tel">+98 230 32 34 3233</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -755,32 +789,50 @@
 							Copyright &copy; 2015 IRIB World Service. All Rights Reserved.
 						</div>
 						<div class="col-xs-12 col-md-6">
-							<div class="text-right">Choose Language</div>
+							<div class="lang-select text-right"><i class="icon-down"></i> Choose between 32 languages</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="wrapper _dark-gray">	
-				<div class="conrainer">
-					<div id="languages" class="row">
+			<div id="languages" class="wrapper _dark-gray" style="display: none;">	
+				<div class="container">
+					<div class="row">
 						<div class="col-xs-12 col-sm-4 col-md-3">
 							<nav class="footemnenu">
-								<ul class="list-unstyled list-inline">
-									<li><a href="#"></a></li>
+								<ul class="list-unstyled">
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
 								</ul>
 							</nav>
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-3">
 							<nav class="footemnenu">
-								<ul class="list-unstyled list-inline">
-									<li><a href="#"></a></li>
+								<ul class="list-unstyled">
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
 								</ul>
 							</nav>
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-3">
 							<nav class="footemnenu">
-								<ul class="list-unstyled list-inline">
-									<li><a href="#"></a></li>
+								<ul class="list-unstyled">
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
+									<li><a href="#">Language name</a></li>
 								</ul>
 							</nav>
 						</div>
