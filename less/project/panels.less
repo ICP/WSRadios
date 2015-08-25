@@ -260,7 +260,7 @@
 	}
     }
     &.poll {
-	
+
     }
     &.exlinks {
 	.panel-body {
@@ -305,5 +305,68 @@
 	    .tel { margin-top: (@grid-gutter-width / 2); font-weight: bold; }
 	}
     }
-}
+    &.top-news {
+	.item {
+	    float: left; width: 492px; border-right: 4px solid @lightGray; position: relative;
+	    .img {
+		height: 272px; overflow: hidden;
+		& > a {
+		    position: relative; display: block;
+		    &:after {
+			position: absolute; z-idnex: 80; height: 50%; bottom: 0; left: 0; width: 100%; content: ''; display: block;
+			background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65)));
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+			background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+			background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
 
+		    }
+		    .img { position: relative; z-index: 100; }
+		}
+	    }
+	    figcaption {
+		position: absolute; left: 0; bottom: 0; width: 100%; text-align: center;
+		h2 {
+		    margin: 0;
+		    a {
+			display: block; padding: @grid-gutter-width; color: #fff; text-shadow: 0 2px 2px #000; transition: 0.2s all;
+			&:hover { text-decoration: none; }
+		    }
+		}
+	    }
+	    &:hover {
+		a {
+		    color: @lightGray;
+		}
+	    }
+	}
+	.itemlist {
+	    margin-left: 492px;
+	    ul {
+		li {
+		    @itemlistItemHeight: 68px;
+		    height: @itemlistItemHeight; position: relative;
+		    & > a {
+			background: @darkBlue; display: block; color: #fff; font-weight: bold; transition: 0.2s all;
+			span {
+			    display: block;
+			    &.img {
+				float: left; height: @itemlistItemHeight; width: 122px; /**/
+				img { height: 100%; width: auto; }
+			    }
+			    &.title { margin-left: 132px; height: @itemlistItemHeight; overflow: hidden; padding-top: 4px; }
+			}
+		    }
+		    &:hover, &.active {
+			&:before { display: block; content: ''; height: 100%; width: 9px; background: @sectionColor; top: 0; left: -9px; position: absolute; }
+			& > a {
+			    background: @lightBlue; color: @darkBlue; text-decoration: none;
+			}
+		    }
+		}
+	    }
+	}
+    }
+}
