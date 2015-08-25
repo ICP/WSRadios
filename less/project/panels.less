@@ -22,7 +22,7 @@
 	&:hover { color: @link-color; }
     }
 
-    /*! Colors */
+    /*! Colors and Patterns */
     &.dark {
 	.panel-title, .panel-heading {
 	    color: #fff;
@@ -45,6 +45,12 @@
     &.title-pattern {
 	.panel-heading {
 	    background-image: @patternHeader; background-repeat: repeat; background-position: center center;
+	}
+	.panel-title {
+	    background-image: @PatternLight; background-repeat: repeat; background-position: center center; height: 25px;
+	    & > a {
+		background: @sectionColor none repeat scroll 0 0;color: #fff;display: inline-block;font-size: 12px;line-height: 25px;padding: 0 10px; transition: all 0.2s ease 0s; border-right: 6px solid #fff;
+	    }
 	}
     }
 
@@ -120,6 +126,37 @@
 			    }
 			}
 		    }
+		}
+	    }
+	}
+	&.light {
+	    .items {
+		padding: 0;
+		ul {
+		    li {
+			width: 196px;
+			& ~ li { margin-left: (@grid-gutter-width / 2) + 1; }
+			figure {
+			    & > a, & > img { border: 0 none; }
+			    figcaption {
+				&, a { color: @text-color; padding-top: 4px; }
+			    }
+			}
+			&:hover, &.active {
+			    figure {
+				& > a, & > img { border: 0 none; }
+			    }
+			}
+		    }
+		}
+	    }
+	}
+	&.pagers-header {
+	    .pager {
+		margin-top: 0; top: -40px; height: 25px; width: auto; float: right; left: auto; right: 0;
+		a {
+		    height: 25px; width: 31px; background: @lightGray; float: left; border-left: 6px solid #fff; margin: 0; color: #fff; font-size: 18px; line-height: 25px; transition: 0.2s all;
+		    &:hover { background: @sectionColor; }
 		}
 	    }
 	}
