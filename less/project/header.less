@@ -1,5 +1,59 @@
 #header { 
     color: #fff;
     .wrapper { background: @darkBlue; }
+    .logo {
+	margin: 0 0 3px 0; position: relative;
+	a { display: block; width: 150px; height: 82px; overflow: hidden; background: url('../img/logo.png') no-repeat 0 0 transparent; text-indent: 999px; }
+	.lang-title {
+	    &:before { content: ' / '; }
+	    display: block; font-size: 14px; font-weight: bold; text-transform: uppercase; position: absolute; top: 66px; left: 155px;
+	}
+    }
+    .search {
+	.form-group {
+	    position: relative; width: 250px; float: right; margin-bottom: 0;
+	    .form-control { background: @inputBackground; border-radius: 0; color: #fff; border: 0 none; }
+	    button { background: transparent; color: #fff; border: 0 none; position: absolute; top: 0; right: 0; font-size: 18px; width: 36px; height: 34px; line-height: 34px; padding-right: 10px; }
+	}
+    }
+    .social-icons {
+	li {
+	    padding-top: 8px;
+	    a {
+		color: #fff; transition: 0.2s all; font-size: 16px;
+		&:hover { color: @lightGray; }
+	    }
+	}
+    }
+}
+#masthead { padding-top: 10px; background: url('../img/header_bg.jpg') no-repeat center top @darkBlue; }
+#menu {
+    font-size: 14px; text-transform: uppercase;
+    ul {
+	li {
+	    float: left; padding: 0; position: relative;
+	    a {
+		color: #fff; display: block; line-height: 42px; padding: 0 20px 0 10px; transition: 0.2s all;
+		&:hover { text-decoration: none; }
+	    }
+	    &.active, &:hover {
+		& > a { background: @menuHover; }
+	    }
+	    &:hover {
+		ul.child { display: block; transition: 0.2s all; }
+	    }
+	    ul.child {
+		position: absolute; top: 42px; left: 0; width: 300px; background: @darkBlue; list-style: none; padding: (@grid-gutter-width / 2); margin: 0; z-index: 100; transition: 0.2s all; display: none;
+		li {
+		    float: none; text-transform: none;
+		    a { line-height: 42px; padding: 0 10px; }
+		    & ~ li { border-top: 1px solid @navy; }
+		    &:hover, &.active {
+			& > a { background: @navy; }
+		    }
+		}
+	    }
+	}
+    }
 }
 .date { font-size: 11px; color: @link-color; line-height: 40px; }
