@@ -165,7 +165,7 @@
 	.panel-title {
 	    margin-bottom: @grid-gutter-width / 2;
 	    ul {
-		list-style: none; margin: 0; padding: 0; border: 0 none; border-bottom: 4px solid @lightGray;
+		list-style: none; margin: 0; padding: 0; border: 0 none; border-bottom: 4px solid @lightGray; height: 41px; overflow: hidden;
 		li {
 		    margin-bottom: 0;
 		    &:hover, &.active {
@@ -391,7 +391,7 @@
 			    display: block;
 			    &.img {
 				float: left; height: @itemlistItemHeight; width: 122px; /**/
-				img { height: 100%; width: auto; }
+				img { display: block; height: auto; width: 100%; }
 			    }
 			    &.title { margin-left: 132px; height: @itemlistItemHeight; overflow: hidden; padding-top: 4px; }
 			}

@@ -1,10 +1,139 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Jul 6, 2015, 4:45:24 PM
-    Author     : Farid Rn
-*/
-
+@media (max-width: @screen-md-max){
+    .wrapper { width: 100%; }
+    .panel {
+	&.top-news {
+	    .item {
+		float: none; width: 100%; border-right: 0 none; border-bottom: 4px solid @lightGray;
+		.img { height: auto; }
+	    }
+	    .itemlist {
+		margin-left: 0;
+		ul {
+		    li {
+			width: 25%; float: left; min-height: 160px;
+			&:hover, &.active {
+			    &:before { width: 100%; height: 9px; left: 0; top: -9px; }
+			}
+			& > a {
+			    background: transparent; color: @navy;
+			    span {
+				&.img { float: none; width: 100%; height: auto; }
+				&.title { margin-left: 0; padding: 4px 8px 0; }
+			    }
+			}
+		    }
+		}
+	    }
+	}
+	&.slider {
+	    margin-left: 0;
+	    .items {
+		ul {
+		    li {
+			width: 151px;
+		    }
+		}
+	    }
+	    &.light {
+		padding: 0;
+		.items {
+		    ul {
+			li {
+			    width: 158px;
+			}
+		    }
+		}
+	    }
+	}
+	&.tabs {
+	    .panel-title {
+		ul {
+		    li {
+			a { padding-left: 6px; padding-right: 6px; }
+		    }
+		}
+	    }
+	}
+	&.digest {
+	    &.thumbs {
+		ul {
+		    li {
+			width: 331px;
+		    }
+		}
+	    }
+	}
+    }
+}
+// SM
+@media (max-width: @screen-sm-max){
+    .panel {
+	&.slider {
+	    .items {
+		ul {
+		    li { width: 153px; }
+		}
+	    }
+	    &.light {
+		.items {
+		    ul {
+			li { width: 168px; }
+		    }
+		}
+	    }
+	}
+	&.digest {
+	    &.thumbs {
+		ul {
+		    li {
+			width: 343px;
+		    }
+		}
+	    }
+	}
+    }
+}
+// XS
+@media (max-width: @screen-xs-max){
+    .panel {
+	&.ticker {
+	    .panel-title { display: none; }
+	    .panel-body { margin-left: 0; }
+	}
+	&.top-news {
+	    .item { border-bottom: 0 none; }
+	    .itemlist { display: none; }
+	}
+	&.slider {
+	    .items {
+		
+	    }
+	    &.light {
+		.items {
+		    ul {
+			li { width: 179px; }
+		    }
+		}
+	    }
+	}
+	&.digest {
+	    &.thumbs {
+		ul {
+		    li {
+			margin-bottom: (@grid-gutter-width / 2);
+			&.featured {
+			    min-height: 0;
+			    .img { width: 50%; }
+			    .desc {
+				margin-left: 52%;
+				h3 { font-size: 16px; }
+				p { display: none; }
+			    }
+			}
+			&:nth-child(2n+3) { margin-left: 0; }
+		    }
+		}
+	    }
+	}
+    }
+}
