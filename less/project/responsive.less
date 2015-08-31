@@ -70,6 +70,18 @@
 		}
 	    }
 	}
+	&.gallery {
+	    .items {
+		ul {
+		    li {
+			figure {
+			    img { width: 60%; }
+			    figcaption { margin-left: 60%; }
+			}
+		    }
+		}
+	    }
+	}
     }
 }
 // SM
@@ -94,6 +106,35 @@
 		ul {
 		    li {
 			width: 343px;
+		    }
+		}
+	    }
+	}
+	&.gallery {
+	    .items {
+		ul {
+		    li {
+			figure {
+			    img { width: 100%; float: none; }
+			    figcaption { margin-left: 0; padding-left: 0; }
+			}
+		    }
+		}
+	    }
+	}
+	&.tiles {
+	    .items {
+		ul {
+		    li {
+			width: 50%;
+			figure {
+			    figcaption {
+				a {
+				    font-size: 12px; line-height: 16px;
+				    .meta { font-size: 11px; }
+				}
+			    }
+			}
 		    }
 		}
 	    }
