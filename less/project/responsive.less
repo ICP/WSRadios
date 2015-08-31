@@ -44,6 +44,13 @@
 		    }
 		}
 	    }
+	    &.vertical {
+		.items {
+		    ul {
+			li { width: 100%; }
+		    }
+		}
+	    }
 	}
 	&.tabs {
 	    .panel-title {
@@ -105,13 +112,31 @@
 	    .itemlist { display: none; }
 	}
 	&.itemlist {
-	    .items {
-		
-	    }
 	    &.light {
 		.items {
 		    ul {
 			li { width: 179px; }
+		    }
+		}
+	    }
+	    &.vertical {
+		.items {
+		    ul {
+			li {
+			    figure {
+				.img { width: 100%; float: none; }
+				figcaption {
+				    margin-left: 0; padding-left: 0;
+				    h3 { margin-top: (@grid-gutter-width / 2); }
+				    p { display: none; }
+				}
+			    }
+			    &.featured {
+				figcaption {
+				    p { display: block; }
+				}
+			    }
+			}
 		    }
 		}
 	    }
