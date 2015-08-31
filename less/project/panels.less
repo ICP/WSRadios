@@ -453,11 +453,75 @@
 	    }
 	}
     }
+    &.gallery {
+	.panel-heading {
+	    padding: 0; font-weight: bold; font-family: Arial; text-transform: uppercase;
+	    h2, h2 a {
+		display: inline-block; color: #fff; line-height: 25px; padding: 0 10px; background: @sectionColor; font-size: 12px; transition: all 0.2s; font-weight: bold; margin: 0;
+		&:hover { text-decoration: none; background: darken(@sectionColor, 10%); }
+	    }
+	}
+	.items {
+	    ul {
+		li {
+		    figure {
+			img { display: block; float: left; width: 65%; }
+			figcaption {
+			    margin-left: 65%; padding-left: (@grid-gutter-width / 2);
+			    h3 { font-weight: bold; font-size: 20px; }
+			    .date { color: lighten(@gray, 10%); font-size: 11px; }
+			}
+		    }
+		}
+	    }
+	}
+	.sharings { margin-top: @grid-gutter-width; }
+    }
+    &.tiles {
+	/*margin-top: @grid-gutter-width;*/
+	.panel-title { margin-bottom: @grid-gutter-width / 2; }
+	.items {
+	    ul {
+		font-size: 0; margin: -(@grid-gutter-width / 2);
+		li {
+		    padding: 0; font-size: 14px; padding: (@grid-gutter-width / 2); float: left; width: 33.33333%;
+		    figure {
+			& > a { display: block; padding-bottom: (@grid-gutter-width / 3); }
+			figcaption {
+			    a {
+				color: @text-color; font-weight: bold; font-size: 14px;
+				&:hover {
+				    text-decoration: none;
+				}
+				.meta {
+				    display: inline-block; color: @gray; font-weight: normal; font-size: 13px;
+				    &:before { content: ' '; }
+				}
+			    }
+			}
+		    }
+		    &:hover {
+			figure {
+			    figcaption {
+				a { color: @navy; }
+			    }
+			}
+		    }
+		}
+	    }
+	}
+    }
 }
 .sharings {
     ul {
+	font-size: 0;
 	li {
-	    a { background: @linkGray; }
+	    padding: 0; font-size: 16px; text-align: center;
+	    & ~ li { margin-left: 6px; }
+	    a {
+		display: inline-block; width: 32px; height: 32px; line-height: 32px; color: #fff; transition: 0.2s all; background: @linkGray;
+		&:hover { text-decoration: none; }
+	    }
 	    &.blue-dark { a { background: @facebook; } }
 	    &.blue-light { a { background: @twitter; } }
 	    &.blue-light2 { a { background: @linkedin; } }
