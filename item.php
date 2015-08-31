@@ -45,6 +45,9 @@
 							<div id="item" class="item row">
 								<div class="col-xs-12">
 									<div class="page-header">
+										<h3 class="item-section">
+											<a href="#">United States</a>
+										</h3>
 										<h2 class="item-title">Images of Israeli soldier trying to arrest boy with broken arm go viral</h2>
 									</div>
 									<div class="item-media">
@@ -61,7 +64,8 @@
 										<div class="row">
 											<div class="col-xs-12 col-sm-8 col-lg-9">
 												<div class="item-text">
-													<p class="introtext">Jerusalem (CNN) - Images of an armed Israeli soldier trying to arrest an 11-year-old Palestinian boy with a broken arm in the West Bank went viral on social media over the weekend.</p>
+													<p class="introtext">
+														<span class="item-source">Jerusalem (CNN)</span> Images of an armed Israeli soldier trying to arrest an 11-year-old Palestinian boy with a broken arm in the West Bank went viral on social media over the weekend.</p>
 													<p>The images show the soldier putting a headlock on the child while women pull on the soldier's back, trying to free the boy. </p>
 													<p>Police in Austria say three Syrian children and their families who were rescued from a minivan containing 26 migrants have disappeared from the hospital where they were being treated. </p>
 													<p>Austrian police said they stopped the minivan in Braunau, which sits on the country's border with Germany, on Friday and arrested its Romanian driver. </p>

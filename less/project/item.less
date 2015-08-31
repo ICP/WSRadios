@@ -61,8 +61,19 @@
     }
     .item-text {
 	.introtext { color: darken(@gray, 10%); margin-bottom: (@grid-gutter-width / 2); }
+	.item-source {
+	    display: inline-block; font-weight: bold;
+	    &:after { content: ' - ' }
+	}
 	blockquote {
 	    float: right; margin: -(@grid-gutter-width / 2) -(189px + @grid-gutter-width) 0 0; width: 189px; border: 0 none; font-size: 14px; font-weight: bold; background: darken(@lightGray, 10%); color: #fff; padding: 30px 20px;
  	}
+    }
+}
+.item-section {
+    font-family: Arial;font-weight: bold;padding: 0;text-transform: uppercase;margin: 0 0 14px;
+    a {
+	background: @sectionColor none repeat scroll 0 0;color: #fff;display: inline-block;font-size: 12px;line-height: 25px;padding: 0 10px;transition: all 0.2s ease 0s;
+	&:hover { text-decoration: none; background: darken(@sectionColor, 10%); }
     }
 }
