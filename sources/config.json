@@ -7,6 +7,12 @@
   "ascent": 850,
   "glyphs": [
     {
+      "uid": "0f99ab40ab0b4d64a74f2d0deeb03e42",
+      "css": "videocam",
+      "code": 59435,
+      "src": "fontawesome"
+    },
+    {
       "uid": "c6be5a58ee4e63a5ec399c2b0d15cf2c",
       "css": "reply",
       "code": 59427,
@@ -118,6 +124,12 @@
       "uid": "e335adbc2d898c7d85d40c507796e7b4",
       "css": "mail",
       "code": 59415,
+      "src": "entypo"
+    },
+    {
+      "uid": "85017ab6ca074831a8de771b40e9640c",
+      "css": "camera",
+      "code": 59436,
       "src": "entypo"
     },
     {
@@ -250,6 +262,12 @@
       "uid": "3849753858193b4d6e07afa834aff979",
       "css": "thumbs-down",
       "code": 59425,
+      "src": "elusive"
+    },
+    {
+      "uid": "b59b3b618699b467541f631edd5a02ed",
+      "css": "speaker",
+      "code": 59437,
       "src": "elusive"
     },
     {
