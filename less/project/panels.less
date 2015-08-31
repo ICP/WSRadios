@@ -70,7 +70,7 @@
 	.panel-heading {
 	    padding: 0; font-weight: bold; font-family: Arial; text-transform: uppercase;
 	    a {
-		display: inline-block; color: #fff; line-height: 25px; padding: 0 10px; background: @sectionColor; font-size: 12px; transition: all 0.2s;
+		display: inline-block; color: #fff; line-height: 25px; padding: 0 10px; background: @sectionColor; font-size: 12px; transition: all 0.2s; font-weight: bold;
 		&:hover { text-decoration: none; background: darken(@sectionColor, 10%); }
 	    }
 	}
@@ -157,6 +157,53 @@
 		a {
 		    height: 25px; width: 31px; background: @lightGray; float: left; border-left: 6px solid #fff; margin: 0; color: #fff; font-size: 18px; line-height: 25px; transition: 0.2s all;
 		    &:hover { background: @sectionColor; }
+		}
+	    }
+	}
+	&.news {
+	    padding: 0; margin-left: 0;
+	    .panel-heading {
+		h3 { margin-top: 0; }
+	    }
+	}
+	&.vertical {
+	    .items { padding: 0; }
+	    ul {
+		li {
+		    width: 100%; margin-left: 0 !important; margin-bottom: @grid-gutter-width;
+		    figure {
+			.img { width: 25%; float: left; clear: left; }
+			figcaption {
+			    margin-left: 25%; padding-left: @grid-gutter-width;
+			    h3 {
+				font-size: 16px; font-weight: bold; margin: 0;
+				a { color: @text-color; }
+			    }
+			    .date { color: @gray; font-weight: normal; }
+			    p { font-weight: normal; }
+			}
+			a {
+			    border: 0 none;
+			}
+		    }
+		    &:hover {
+			figure {
+			    a { border: 0 none; }
+			    figcaption {
+				a { color: #000; }
+				p { color: @text-color; }
+			    }
+			}
+		    }
+		    &.featured {
+			figure {
+			    .img { width: 50%; }
+			    figcaption {
+				margin-left: 50%;
+				h3 { font-size: 24px; }
+			    }
+			}
+		    }
 		}
 	    }
 	}
