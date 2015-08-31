@@ -49,7 +49,7 @@
 									</div>
 									<div class="item-media">
 										<ul class="list-unstyled">
-											<li class="item">
+											<li class="photo">
 												<figure class="img">
 													<img alt="" src="data/smpl1.jpg">
 													<figcaption>The soldier struggles with the crowd during the attempted arrest.</figcaption>
@@ -72,11 +72,11 @@
 													<p>Austrian police said they stopped the minivan in Braunau, which sits on the country's border with Germany, on Friday and arrested its Romanian driver. </p>
 													<p>The children - two girls and a boy aged between one and five years old - were said to have been crammed in the back along with other migrants from Syria, Afghanistan and Bangladesh.</p>
 												</div>
-												<div class="sharings">
+												<div class="sharings hidden-xs hidden-sm">
 													<ul class="list-unstyled list-inline">
-														<li class="blue-dark"><a href="https://www.facebook.com/sharer/sharer.php?u=http://hispantv.com{{Data.url}}" target="_blank"><i class="icon-facebook"></i></a></li>
-														<li class="blue-light"><a href="https://twitter.com/home?status=http://hispantv.com{{Data.url}}" target="_blank"><i class="icon-twitter"></i></a></li>
-														<li class="red"><a href="https://plus.google.com/share?url=http://hispantv.com{{Data.url}}" target="_blank"><i class="icon-gplus"></i></a></li>
+														<li class="blue-dark"><a href="https://www.facebook.com/sharer/sharer.php?u={{url}}" target="_blank"><i class="icon-facebook"></i></a></li>
+														<li class="blue-light"><a href="https://twitter.com/home?status={{url}}" target="_blank"><i class="icon-twitter"></i></a></li>
+														<li class="red"><a href="https://plus.google.com/share?url{{url}}" target="_blank"><i class="icon-gplus"></i></a></li>
 														<li class="red-dark"><a href="#" target="_blank"><i class="icon-pinterest"></i></a></li>
 														<li class="blue-light2"><a href="#" target="_blank"><i class="icon-linkedin"></i></a></li>
 														<li class="orange"><a href="#" target="_blank"><i class="icon-blogger"></i></a></li>
@@ -92,9 +92,9 @@
 												<div class="item-tools">
 													<div class="sharings">
 														<ul class="list-unstyled list-inline">
-															<li class="blue-dark"><a href="https://www.facebook.com/sharer/sharer.php?u=http://hispantv.com{{Data.url}}" target="_blank"><i class="icon-facebook"></i></a></li>
-															<li class="blue-light"><a href="https://twitter.com/home?status=http://hispantv.com{{Data.url}}" target="_blank"><i class="icon-twitter"></i></a></li>
-															<li class="red"><a href="https://plus.google.com/share?url=http://hispantv.com{{Data.url}}" target="_blank"><i class="icon-gplus"></i></a></li>
+															<li class="blue-dark"><a href="https://www.facebook.com/sharer/sharer.php?u={{url}}" target="_blank"><i class="icon-facebook"></i></a></li>
+															<li class="blue-light"><a href="https://twitter.com/home?status={{url}}" target="_blank"><i class="icon-twitter"></i></a></li>
+															<li class="red"><a href="https://plus.google.com/share?url={{url}}" target="_blank"><i class="icon-gplus"></i></a></li>
 															<li class="gray"><a href="javascript:window.print();"><i class="icon-print"></i></a></li>
 															<li class="gray"><a href="#"><i class="icon-mail"></i></a></li>
 														</ul>
