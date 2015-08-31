@@ -2,7 +2,7 @@
 			<div class="wrapper _dark-blue _border-bottom">
 				<div class="container">
 					<div id="sitemap" class="row">
-						<div class="col-xs-12 col-sm-4 col-md-3">
+						<div class="col-xs-6 col-sm-4 col-md-3">
 							<nav class="footer-menu">
 								<dl>
 									<dt>Connect with us</dt>
@@ -14,7 +14,7 @@
 								</dl>
 							</nav>
 						</div>
-						<div class="col-xs-12 col-sm-4 col-md-3">
+						<div class="col-xs-6 col-sm-4 col-md-3">
 							<nav class="footer-menu">
 								<dl>
 									<dt>Get our content</dt>
@@ -26,7 +26,7 @@
 								</dl>
 							</nav>
 						</div>
-						<div class="col-xs-12 col-sm-4 col-md-3">
+						<div class="hidden-xs col-sm-4 col-md-3">
 							<nav class="footer-menu">
 								<dl>
 									<dt>Follow us</dt>
