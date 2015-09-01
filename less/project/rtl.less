@@ -21,7 +21,7 @@ body.rtl {
 	    }
 	}
 	&.top-news {
-	    .item { float: right; }
+	    .item { float: right; border-right: 0 none; border-lefT: 4px solid @lightGray; }
 	    .itemlist {
 		margin-left: 0; margin-right: 492px;
 		ul li {
@@ -46,6 +46,59 @@ body.rtl {
 		li a {
 		    padding-left: 0; padding-right: 40px;
 		    &:before { left: auto; right: 4px; }
+		}
+	    }
+	}
+	&.thisday {
+	    .text {
+		padding-right: 0; padding-left: 100px;
+		&:after { right: auto; left: 0; }
+	    }
+	}
+	&.digest.thumbs {
+	    &.list-condensed {
+		ul li {
+		    .img { float: right; clear: right; }
+		    .desc { margin-left: 0; margin-right: 109px; }
+		}
+	    }
+	    ul li {
+		.img { float: right; clear: right; }
+		.desc { margin-left: 0; margin-right: 188px; }
+		&.featured {
+		    .desc { margin-right: 436px; }
+		}
+	    }
+	}
+	&.sms {
+	    .panel-body .inner {
+		padding-right: 15px; padding-left: 70px;
+		&:before { right: auto; left: 15px; }
+	    }
+	}
+	&.itemlist {
+	    margin-left: 0; margin-right: -15px;
+	    &.pagers-header {
+		.pager {
+		    float: left; right: auto; left: 0;
+		    a { border-left: 0 none; border-right: 6px solid #fff; }
+		}
+	    }
+	    &.news {
+		margin-right: 0;
+	    }
+	    &.light {
+		margin-right: 0;
+	    }
+	    &.vertical {
+		ul li {
+		    figure {
+			.img { float: right; clear: right; }
+			figcaption { margin-left: 0; margin-right: 25%; padding-left: 0; padding-right: @grid-gutter-width; }
+		    }
+		    &.featured {
+			figcaption { margin-right: 50%; }
+		    }
 		}
 	    }
 	}

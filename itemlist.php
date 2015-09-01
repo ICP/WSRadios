@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/modernizr-2.6.2.min.js"></script>
 	</head>
-	<body>
+	<body class="rtl">
 		<?php include(dirname(__FILE__) . '/blocks/header.php'); ?>
 		<section id="main">
 			<div class="wrapper _light-blue _border-top _border-bottom">
