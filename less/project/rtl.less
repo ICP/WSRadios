@@ -72,12 +72,12 @@ body.rtl {
 	}
 	&.sms {
 	    .panel-body .inner {
-		padding-right: 15px; padding-left: 70px;
-		&:before { right: auto; left: 15px; }
+		padding-right: (@grid-gutter-width / 2); padding-left: 70px;
+		&:before { right: auto; left: (@grid-gutter-width / 2); }
 	    }
 	}
 	&.itemlist {
-	    margin-left: 0; margin-right: -15px;
+	    margin-left: 0; margin-right: -(@grid-gutter-width / 2);
 	    &.pagers-header {
 		.pager {
 		    float: left; right: auto; left: 0;
@@ -89,6 +89,9 @@ body.rtl {
 	    }
 	    &.light {
 		margin-right: 0;
+		.items {
+		    ul li { width: 198px; }
+		}
 	    }
 	    &.vertical {
 		ul li {
@@ -101,6 +104,39 @@ body.rtl {
 		    }
 		}
 	    }
+	    &.slider.light {
+		padding:  0;
+		ul li {
+		    float: left;
+		}
+	    }
+	    .items {
+		ul li {
+		    /*float: right;*/
+		    /*& ~ li { margin-left: (@grid-gutter-width / 2); }*/
+		}
+	    }
 	}
+    }
+    #item {
+	.item-media {
+	    ul li {
+		&.photo, &.video, &.audio {
+		    figure figcaption {
+			padding-left: 0; padding-right: 36px;
+			&:before { left: auto; right: 0; }
+		    }
+		}
+	    }
+	}
+	.item-tools {
+	    .font-resizer ul li ~ li { margin-left: 0; margin-right: 6px; }
+	}
+	.item-text {
+	    blockquote { float: left; margin-right: 0; margin-left: -219px; }
+	}
+    }
+    .sharings {
+	ul li ~ li { margin-left: 0; margin-right: 6px; }
     }
 }
