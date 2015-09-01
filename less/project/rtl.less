@@ -8,6 +8,11 @@ body.rtl {
     .nav-tabs > li { float: right; }
     .date.text-right { text-align: left; }
     .panel {
+	&.title-pattern {
+	    .panel-title {
+		& > a { border-right: 0 none; border-left: 6px solid #fff; }
+	    }
+	}
 	&.ticker {
 	    .panel-title { float: right; clear: right; }
 	    .panel-body { margin-left: 0; margin-right: 160px; }
@@ -108,12 +113,6 @@ body.rtl {
 		padding:  0;
 		ul li {
 		    float: left;
-		}
-	    }
-	    .items {
-		ul li {
-		    /*float: right;*/
-		    /*& ~ li { margin-left: (@grid-gutter-width / 2); }*/
 		}
 	    }
 	}
