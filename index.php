@@ -41,7 +41,7 @@
 			<div id="main-container" class="wrapper _white">
 				<div class="container">
 					<div class="row">
-						<div id="mainbody" class="col-xs-12 col-md-9">
+						<div id="mainbody" class="col-xs-12 col-md-8">
 							<div class="row">
 								<div class="col-xs-12">
 									<div class="panel top-news">

@@ -41,7 +41,7 @@
 			<div id="main-container" class="wrapper _white">
 				<div class="container">
 					<div class="row">
-						<div id="mainbody" class="col-xs-12 col-md-9">
+						<div id="mainbody" class="col-xs-12 col-md-8">
 							<div id="itemlist" >
 								<div class="panel itemlist news vertical">
 									<div class="panel-heading">

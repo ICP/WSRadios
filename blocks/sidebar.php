@@ -1,4 +1,4 @@
-<aside id="aside" class="col-xs-12 col-md-3">
+<aside id="aside" class="col-xs-12 col-md-4">
 	<div class="panel live-links">
 		<div class="panel-body">
 			<ul class="list-unstyled text-center">
