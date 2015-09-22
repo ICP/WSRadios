@@ -2,7 +2,7 @@
     color: #fff;
     .wrapper { background: @darkBlue; }
     .logo {
-	margin: 0 0 3px 0; position: relative;
+	margin: 0 0 12px 0; position: relative;
 	a { display: block; width: 150px; height: 82px; overflow: hidden; background: url('../img/logo.png') no-repeat 0 0 transparent; text-indent: 999px; }
 	.lang-title {
 	    &:before { content: ' / '; }
@@ -26,14 +26,14 @@
 	}
     }
 }
-#masthead { padding-top: 10px; background: url('../img/header_bg.jpg') no-repeat center top @darkBlue; }
+#masthead { padding-top: 10px; background-color: @darkBlue; /*background: url('../img/header_bg.jpg') no-repeat center top @darkBlue;*/ }
 #menu {
-    font-size: 14px; text-transform: uppercase;
+    font-size: 14px; text-transform: uppercase; background-color: lighten(@darkBlue, 5%);
     ul {
 	li {
 	    float: left; padding: 0; position: relative;
 	    a {
-		color: #fff; display: block; line-height: 42px; padding: 0 16px 0 16px; transition: 0.2s all; font-weight: bold; font-size: 13px;
+		color: #fff; display: block; line-height: 32px; padding: 0 16px 0 16px; transition: 0.2s all; font-weight: bold; font-size: 13px;
 		&:hover { text-decoration: none; }
 	    }
 	    &.active, &:hover {
@@ -48,11 +48,11 @@
 	    &.haschild {
 		a {
 		    padding-right: 32px; position: relative;
-		    &:after { display: block; content: '\e811'; position: absolute; top: 0; right: 0; line-height: 42px; height: 42px; width: 16px; text-align: center; font-family: "wsicons"; font-size: 10px; transition: 0.2s all; }
+		    &:after { display: block; content: '\e811'; position: absolute; top: 0; right: 0; line-height: 32px; height: 32px; width: 20px; text-align: center; font-family: "wsicons"; font-size: 10px; transition: 0.2s all; }
 		}
 	    }
 	    ul.child {
-		position: absolute; top: 42px; left: 0; width: 300px; background: @darkBlue; list-style: none; padding: (@grid-gutter-width / 2); margin: 0; z-index: 100; transition: 0.2s all; display: none;
+		position: absolute; top: 32px; left: 0; width: 300px; background: @darkBlue; list-style: none; padding: (@grid-gutter-width / 3); margin: 0; z-index: 100; transition: 0.2s all; display: none;
 		li {
 		    float: none; text-transform: none;
 		    a {

@@ -361,9 +361,9 @@
 										<div class="panel-title">
 											<ul class="nav nav-tabs" role="tablist">
 												<li role="presentation" class="active"><a href="#tab-1-1" aria-controls="tab-2-1" role="tab" data-toggle="tab">Radio Culture</a></li>
-												<li role="presentation"><a href="#tab-2-2" aria-controls="tab-1-2" role="tab" data-toggle="tab">Radio Islam</a></li>
-												<li role="presentation"><a href="#tab-2-3" aria-controls="tab-1-3" role="tab" data-toggle="tab">Radio VOJ</a></li>
-												<li role="presentation"><a href="#tab-2-4" aria-controls="tab-1-4" role="tab" data-toggle="tab">Subcontinent</a></li>
+												<li role="presentation"><a href="#tab-1-2" aria-controls="tab-1-2" role="tab" data-toggle="tab">Radio Islam</a></li>
+												<li role="presentation"><a href="#tab-1-3" aria-controls="tab-1-3" role="tab" data-toggle="tab">Radio VOJ</a></li>
+												<li role="presentation"><a href="#tab-1-4" aria-controls="tab-1-4" role="tab" data-toggle="tab">Subcontinent</a></li>
 											</ul>
 										</div>
 										<div class="panel-body">

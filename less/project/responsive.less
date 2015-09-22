@@ -30,7 +30,11 @@
 	    .items {
 		ul {
 		    li {
-			width: 148px;
+			width: 127px;
+			figcaption {
+			    font-size: 13px;
+			    a { outline: 0 none; display: block; padding-top: 4px; }
+			}
 		    }
 		}
 	    }
@@ -39,7 +43,7 @@
 		.items {
 		    ul {
 			li {
-			    width: 162px;
+			    width: 143px;
 			}
 		    }
 		}
@@ -65,7 +69,13 @@
 	    &.thumbs {
 		ul {
 		    li {
-			width: 331px;
+			width: 291px;
+			.img { width: 150px; }
+			.desc { margin-left: 160px; }
+			&.featured {
+			    .img { width: 320px; }
+			    .desc { margin-left: 335px; }
+			}
 		    }
 		}
 	    }
