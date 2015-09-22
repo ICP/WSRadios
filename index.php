@@ -344,6 +344,36 @@
 															</figcaption>
 														</figure>
 													</li>
+													<li>
+														<figure>
+															<a class="img" href="#">
+																<img src="data/smpl1.jpg" alt="" />
+															</a>
+															<figcaption>
+																<a href="#">A Bomb Seemingly Misses Its Mark in Ukraine, and 11 More Civilians Die</a>
+															</figcaption>
+														</figure>
+													</li>
+													<li>
+														<figure>
+															<a class="img" href="#">
+																<img src="data/smpl1.jpg" alt="" />
+															</a>
+															<figcaption>
+																<a href="#">A Bomb Seemingly Misses Its Mark in Ukraine, and 11 More Civilians Die</a>
+															</figcaption>
+														</figure>
+													</li>
+													<li>
+														<figure>
+															<a class="img" href="#">
+																<img src="data/smpl1.jpg" alt="" />
+															</a>
+															<figcaption>
+																<a href="#">A Bomb Seemingly Misses Its Mark in Ukraine, and 11 More Civilians Die</a>
+															</figcaption>
+														</figure>
+													</li>
 												</ul>
 											</div>
 										</div>

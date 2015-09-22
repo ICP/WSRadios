@@ -80,77 +80,77 @@
 											<ul class="list-unstyled">
 												<li>
 													<figure>
-														<a class="img" href="#">
+														<a href="data/smpl1.jpg" data-lightbox="image-1" class="img">
 															<img src="data/smpl1.jpg" alt="" />
 														</a>
 													</figure>
 												</li>
 												<li>
 													<figure>
-														<a class="img" href="#">
+														<a href="data/smpl1.jpg" data-lightbox="image-1" class="img">
 															<img src="data/smpl1.jpg" alt="" />
 														</a>
 													</figure>
 												</li>
 												<li>
 													<figure>
-														<a class="img" href="#">
+														<a href="data/smpl1.jpg" data-lightbox="image-1" class="img">
 															<img src="data/smpl1.jpg" alt="" />
 														</a>
 													</figure>
 												</li>
 												<li>
 													<figure>
-														<a class="img" href="#">
+														<a href="data/smpl1.jpg" data-lightbox="image-1" class="img">
 															<img src="data/smpl1.jpg" alt="" />
 														</a>
 													</figure>
 												</li>
 												<li>
 													<figure>
-														<a class="img" href="#">
+														<a href="data/smpl1.jpg" data-lightbox="image-1" class="img">
 															<img src="data/smpl1.jpg" alt="" />
 														</a>
 													</figure>
 												</li>
 												<li>
 													<figure>
-														<a class="img" href="#">
+														<a href="data/smpl1.jpg" data-lightbox="image-1" class="img">
 															<img src="data/smpl1.jpg" alt="" />
 														</a>
 													</figure>
 												</li>
 												<li>
 													<figure>
-														<a class="img" href="#">
+														<a href="data/smpl1.jpg" data-lightbox="image-1" class="img">
 															<img src="data/smpl1.jpg" alt="" />
 														</a>
 													</figure>
 												</li>
 												<li>
 													<figure>
-														<a class="img" href="#">
+														<a href="data/smpl1.jpg" data-lightbox="image-1" class="img">
 															<img src="data/smpl1.jpg" alt="" />
 														</a>
 													</figure>
 												</li>
 												<li>
 													<figure>
-														<a class="img" href="#">
+														<a href="data/smpl1.jpg" data-lightbox="image-1" class="img">
 															<img src="data/smpl1.jpg" alt="" />
 														</a>
 													</figure>
 												</li>
 												<li>
 													<figure>
-														<a class="img" href="#">
+														<a href="data/smpl1.jpg" data-lightbox="image-1" class="img">
 															<img src="data/smpl1.jpg" alt="" />
 														</a>
 													</figure>
 												</li>
 												<li>
 													<figure>
-														<a class="img" href="#">
+														<a href="data/smpl1.jpg" data-lightbox="image-1" class="img">
 															<img src="data/smpl1.jpg" alt="" />
 														</a>
 													</figure>
