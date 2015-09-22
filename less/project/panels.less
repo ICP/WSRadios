@@ -174,7 +174,7 @@
 		    figure {
 			.img { width: 25%; float: left; clear: left; }
 			figcaption {
-			    margin-left: 25%; padding-left: @grid-gutter-width;
+			    margin-left: 25%; padding-left: (@grid-gutter-width / 2);
 			    h3 {
 				font-size: 16px; font-weight: bold; margin: 0;
 				a { color: @text-color; }
@@ -485,13 +485,14 @@
 	    }
 	}
 	.items {
+	    margin: 0 -(@grid-gutter-width / 5);
 	    ul {
 		li {
+		    width: 25%; float: left; padding: (@grid-gutter-width / 5);
 		    figure {
-			img { display: block; float: left; width: 65%; }
+			img { display: block; }
 			figcaption {
-			    margin-left: 65%; padding-left: (@grid-gutter-width / 2);
-			    h3 { font-weight: bold; font-size: 20px; }
+			    h3 { font-weight: bold; font-size: 14px; }
 			    .date { color: lighten(@gray, 10%); font-size: 11px; }
 			}
 		    }
@@ -542,7 +543,7 @@
 	    padding: 0; font-size: 16px; text-align: center;
 	    & ~ li { margin-left: 6px; }
 	    a {
-		display: inline-block; width: 32px; height: 32px; line-height: 32px; color: #fff; transition: 0.2s all; background: @linkGray;
+		display: inline-block; width: 28px; height: 28px; line-height: 28px; color: #fff; transition: 0.2s all; background: @linkGray;
 		&:hover { text-decoration: none; }
 	    }
 	    &.blue-dark { a { background: @facebook; } }

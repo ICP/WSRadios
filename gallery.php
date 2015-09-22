@@ -41,23 +41,118 @@
 			<div id="main-container" class="wrapper _white">
 				<div class="container">
 					<div class="row">
-						<div id="mainbody" class="col-xs-12 col-md-9">
+						<div id="mainbody" class="col-xs-12 col-md-8">
+							<div id="item" class="item row">
+								<div class="col-xs-12">
+									<div class="page-header">
+										<h3 class="item-section">
+											<a href="#">Gallery</a>
+										</h3>
+										<h2 class="item-title">Images of Israeli soldier trying to arrest boy with broken arm go viral</h2>
+									</div>
+									<div class="item-media">
+										<ul class="list-unstyled">
+											<li class="photo">
+												<figure class="img">
+													<img alt="" src="data/smpl1.jpg">
+													<figcaption>The soldier struggles with the crowd during the attempted arrest.</figcaption>
+												</figure>
+											</li>
+										</ul>
+									</div>
+									<div class="item-body">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="item-text">
+													<p class="introtext">
+														<span class="item-source">Jerusalem (CNN)</span> Images of an armed Israeli soldier trying to arrest an 11-year-old Palestinian boy with a broken arm in the West Bank went viral on social media over the weekend.</p>
+													<p>The images show the soldier putting a headlock on the child while women pull on the soldier's back, trying to free the boy. </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 							<div id="gallery">
 								<div class="panel gallery">
-									<div class="panel-heading">
-										<h2>Gallery</h2>
-									</div>
 									<div class="panel-body">
 										<div class="items">
 											<ul class="list-unstyled">
 												<li>
 													<figure>
-														<img src="data/smpl1.jpg" alt="" />
-														<figcaption class="desc">
-															<h3>A Bomb Seemingly Misses Its Mark in Ukraine, and 11 More Civilians Die</h3>
-															<div class="date">Sunday, 30 August 2015 15:13</div>
-															<p>Air strikes rattled the city of Snizhne in eastern Ukraine Tuesday. Pro-Russia rebels blamed Kiev, and some in Kiev seemed to blame Russia.</p>
-														</figcaption>
+														<a class="img" href="#">
+															<img src="data/smpl1.jpg" alt="" />
+														</a>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<a class="img" href="#">
+															<img src="data/smpl1.jpg" alt="" />
+														</a>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<a class="img" href="#">
+															<img src="data/smpl1.jpg" alt="" />
+														</a>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<a class="img" href="#">
+															<img src="data/smpl1.jpg" alt="" />
+														</a>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<a class="img" href="#">
+															<img src="data/smpl1.jpg" alt="" />
+														</a>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<a class="img" href="#">
+															<img src="data/smpl1.jpg" alt="" />
+														</a>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<a class="img" href="#">
+															<img src="data/smpl1.jpg" alt="" />
+														</a>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<a class="img" href="#">
+															<img src="data/smpl1.jpg" alt="" />
+														</a>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<a class="img" href="#">
+															<img src="data/smpl1.jpg" alt="" />
+														</a>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<a class="img" href="#">
+															<img src="data/smpl1.jpg" alt="" />
+														</a>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<a class="img" href="#">
+															<img src="data/smpl1.jpg" alt="" />
+														</a>
 													</figure>
 												</li>
 											</ul>
