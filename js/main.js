@@ -21,7 +21,6 @@ $(function () {
 		, responsive: {
 		    0: { items: 2 }
 		    , 480: { items: 4 }
-//		    , 1000: { items: 4 }
 		}
 	    });
 	    $this.find(".pager .next").click(function(e) {
