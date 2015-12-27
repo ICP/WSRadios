@@ -29,11 +29,14 @@
     }
 }
 .header-menu {
-    float: right; line-height: @masthead-height;
+    float: right; line-height: @masthead-height; font-size: 16px;
     li {
         a { color: @masthead-link-color; font-weight: bold; transition: 0.2s all; }
-        &.active, &:hover {
-            a { color: @masthead-link-hover-color; text-decoration: none; }
+        &.active {
+            a { color: @masthead-menu-hover-color; }
+        }
+        &:hover {
+            a { color: @masthead-menu-hover-color; text-decoration: none; }
         }
     }
 }
@@ -44,7 +47,7 @@
         li {
             line-height: 24px;
             a {
-                color: @languages-link-color; transition: 0.2s all;
+                color: @languages-link-color; transition: 0.2s all; outline: 0 none;
                 &:hover { color: @languages-link-hover-color; text-decoration: none; }
             }
         }
@@ -69,11 +72,11 @@
                 }
             }
             ul.child {
-                position: absolute; top: @header-height; left: 0; width: 300px; background: @header-background; list-style: none; padding: (@grid-gutter-width / 3); margin: 0; z-index: 100; transition: 0.2s all; display: none;
+                position: absolute; top: @header-height; left: 0; width: 220px; background: @header-background; list-style: none; padding: (@grid-gutter-width / 3) 0; margin: 0; z-index: 100; transition: 0.2s all; display: none; border-left: 3px solid @header-hover-background; border-top: 1px solid #fff;
                 li {
                     float: none; text-transform: none;
                     a {
-                        line-height: 32px; padding: 0 10px; border: 0 none;
+                        line-height: @submenu-line-height; padding: 0 10px; border: 0 none;
                         &:after { display: none; }
                     }
                     & ~ li { border-top: 1px solid @header-hover-background; }
