@@ -9,24 +9,18 @@
                     <div class="lang-select" data-toggle="toggle" data-target="#languages">English</div>
                 </div>
                 <div class="col-xs-4 col-sm-6 col-md-8">
-                    <div class="row">
-                        <div class="col-xs-10 col-md-6">
-                            <ul class="header-menu list-inline list-unstyled">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Radio</a></li>
-                            </ul>
+                    <form class="search" role="form" action="#">
+                        <div class="form-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search" />
+                            <button type="submit"><i class="icon-search"></i></button>
                         </div>
-                        <div class="col-xs-10 col-md-6">
-                            <form class="search" role="form" action="#">
-                                <div class="form-group">
-                                    <input type="text" name="q" class="form-control" placeholder="Search" />
-                                    <button type="submit"><i class="icon-search"></i></button>
-                                </div>
-                                <div class="clearfix"></div>
-                            </form>
-                        </div>
-                    </div>
+                        <button class="toggle-search btn btn-link"><i class="icon-search"></i></button>
+                    </form>
+                    <ul class="header-menu list-inline list-unstyled">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Radio</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

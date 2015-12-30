@@ -12,6 +12,17 @@ $(function () {
         }
         e.preventDefault();
     });
+    
+    var $search = $(".search");
+    $(".toggle-search").on('click', function(e) {
+        $search.toggleClass('open').promise().done(function(){
+            $search.find("input").focus();
+        });
+       e.preventDefault(); 
+    });
+    $search.on('focusout', "input", function () {
+        $search.toggleClass('open');
+    });
 
     if ($(".panel.slider").length) {
         var $slider = $(".panel.slider");
