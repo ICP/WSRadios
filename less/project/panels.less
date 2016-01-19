@@ -32,7 +32,7 @@
     &._bg-gray { 
         background: @darkGray; 
         .panel-title{
-             margin-bottom: 20px !important; border-bottom: 0 !important;
+            margin-bottom: 20px !important; border-bottom: 0 !important;
         }
     }
     &._bg-blue {
@@ -55,7 +55,7 @@
     }
     &.title-pattern {
         .panel-heading {
-            
+
         }
         .panel-title {
             height: 33px;
@@ -106,22 +106,23 @@
         }
     }
     &.itemlist {
-        padding: @grid-gutter-width / 2; padding-bottom: @grid-gutter-width; margin-left: -15px;
+        padding: @grid-gutter-width / 2; padding-bottom: @grid-gutter-width;
+        /*margin-left: -15px;*/
         .panel-title { margin-bottom: @grid-gutter-width / 2; border-bottom: 2px solid @style-color3;}
         .pager {
             height: 0; overflow: visible; position: absolute; top: 50%; left: 0; width: 100%; margin-top: -16px;
             a {
-                color: @lightGray; float: left; display: block; font-size: 22px; line-height: 22px; margin-left: -(@grid-gutter-width /2); width: 30px; text-align: center;
+                color: @lightGray; float: left; display: block; font-size: 22px; line-height: 22px; margin-left: -(@grid-gutter-width /4); width: 30px; text-align: center;
                 &:hover { color: #fff; }
-                &.next { float: right; margin-left: 0; margin-right: -(@grid-gutter-width /2); }
+                &.next { float: right; margin-left: 0; margin-right: -(@grid-gutter-width /4); }
                 & > i:before { width: auto; }
             }
         }
         .items {
-            padding: 0 15px;
+            padding: 0 30px;
             ul {
                 li {
-                    float: left; width: 164px; padding: 0;
+                    float: left; width: 160px; padding: 0;
                     & ~ li { margin-left: @grid-gutter-width / 2; }
                     &:hover, &.active {
                         figure {
@@ -132,11 +133,11 @@
                         }
                     }
                     figure {
-                        & > a, & > img { border: 1px solid @lightGray; transition: all 0.2s; margin-bottom: 9px;}
+                        & > a, & > img { border: 1px solid @lightGray; transition: all 0.2s; }
                         figcaption {
                             font-weight: bold;
                             a {
-                                color: @gray-lighter; display: block; font-weight: normal;
+                                color: @gray-lighter; display: block; font-weight: normal; padding-top: 6px;
                                 &:hover { text-decoration: none; transition: all 0.2s; }
                             }
                         }
@@ -432,7 +433,7 @@
                 }
             }
             figcaption {
-                position: absolute; left: 0; bottom: 0; width: 100%; text-align: center;
+                position: absolute; left: 0; bottom: 0; width: 100%;
                 h2 {
                     margin: 0;
                     a {
@@ -593,7 +594,7 @@
                     font-weight: bold;
                 }
             }
-            
+
         }
     }
 }
