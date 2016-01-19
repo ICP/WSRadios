@@ -25,8 +25,7 @@
             </div>
         </div>
     </div>
-    <div class="languages">
-        <div id="languages" style="display: none;">
+    <div id="languages" class="languages" style="display: none;">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-4 col-md-2">
@@ -104,8 +103,6 @@
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
     <nav id="menu">
         <div class="container">
             <div class="row">

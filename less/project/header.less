@@ -5,7 +5,7 @@
         a { display: block; width: 180px; height: 35px; overflow: hidden; background: url('../img/logo.png') no-repeat 0 0 transparent; text-indent: -999px; }
     }
 }
-#masthead { background-color: @masthead-background; height: @masthead-height; }
+#masthead { background-color: @masthead-background; height: @masthead-height; overflow: hidden; }
 .search {
     margin-top: (@grid-gutter-width / 2); float: right; margin-left: @grid-gutter-width; width: 30px; min-width: 30px; position: relative; height: 40px; overflow: hidden; transition: 0.7s all;
     .form-group {
@@ -46,29 +46,28 @@
         }
     }
 }
-.languages{
-    #languages {
-        background: @languages-background;
-        ul {
-            list-style: none; margin: 0; padding: @grid-gutter-width 0;
-            li {
-                a {
-                    color: @languages-link-color; transition: 0.2s all; outline: 0 none; border-left: 3px solid @lightGray; padding-left: 8px; line-height: 24px;
-                    &:hover { color: @languages-link-hover-color; text-decoration: none; border-left-color: @style-color1;}
-                    span{
-                        font-weight: bold;
-                        &:before{
-                            content: "/"; font-size: 12px; line-height: 12px; font-weight: normal; padding: 0 6px 0 8px;
-                        }
+#languages {
+    background: @languages-background; border-bottom: 3px solid @blue-dark;
+    ul {
+        list-style: none; margin: 0; padding: @grid-gutter-width 0;
+        li {
+            a {
+                color: @languages-link-color; transition: 0.2s all; outline: 0 none; border-left: 3px solid @lightGray; padding-left: 8px; line-height: 24px;
+                &:hover { color: @languages-link-hover-color; text-decoration: none; border-left-color: @style-color1;}
+                span{
+                    font-weight: bold;
+                    &:before{
+                        content: "/"; font-size: 12px; line-height: 12px; font-weight: normal; padding: 0 6px 0 8px;
                     }
                 }
             }
         }
     }
-    .separator{
-        background: @style-color1; height: 3px;
-    }
 }
+.separator{
+    background: @style-color1; height: 3px;
+}
+
 #menu {
     font-size: 14px; background-color: @header-background; height: @header-height; color: @header-text-color;
     ul {
