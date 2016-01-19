@@ -25,83 +25,86 @@
             </div>
         </div>
     </div>
-    <div id="languages" style="display: none;">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                    <ul>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                    <ul>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                    <ul>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                    <ul>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                    <ul>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                    <ul>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                        <li><a href="#">Language name</a></li>
-                    </ul>
+    <div class="languages">
+        <div id="languages" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-2">
+                        <ul>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-2">
+                        <ul>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-2">
+                        <ul>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-2">
+                        <ul>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-2">
+                        <ul>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-2">
+                        <ul>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                            <li><a href="#">Language name</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="separator"></div>
     </div>
     <nav id="menu">
         <div class="container">
