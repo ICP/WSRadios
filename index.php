@@ -47,7 +47,7 @@
 									<div class="panel top-news">
 										<div class="panel-body">
 											<div class="item">
-												<figure class="img">
+												<figure class="img video">
 													<a href="#">
 														<img src="data/smpl1.jpg" alt="" />
 													</a>
@@ -101,7 +101,7 @@
 									<div class="panel news">
 										<h3 class="panel-heading"><a href="#">United States</a></h3>
 										<div class="panel-body">
-											<figure class="img">
+											<figure class="img audio">
 												<a href="#">
 													<img src="data/smpl1.jpg" alt="" />
 												</a>
@@ -145,7 +145,7 @@
 									<div class="panel news">
 										<h3 class="panel-heading"><a href="#">United States</a></h3>
 										<div class="panel-body">
-											<figure class="img">
+											<figure class="img gallery">
 												<a href="#">
 													<img src="data/smpl1.jpg" alt="" />
 												</a>
@@ -210,7 +210,7 @@
 									<div class="panel news">
 										<h3 class="panel-heading"><a href="#">United States</a></h3>
 										<div class="panel-body">
-											<figure class="img">
+											<figure class="img audio">
 												<a href="#">
 													<img src="data/smpl1.jpg" alt="" />
 												</a>
