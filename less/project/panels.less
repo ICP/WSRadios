@@ -1,13 +1,13 @@
 .panel {
 
     /*! Global Rules */
-    margin-bottom: @grid-gutter-width;
+    margin-bottom: @grid-gutter-width * 2.5;
     .panel-title {
         text-transform: uppercase;
         a {  }
     }
     .panel-heading {
-        margin: 0 0 14px; text-transform: uppercase; border-radius: 0;
+        margin: 0 0 0px; text-transform: uppercase; border-radius: 0;
     }
     .panel-body {
     }
@@ -18,7 +18,7 @@
         margin-bottom: 0;
     }
     .more {
-        display: inline-block; color: @moreColor; font-weight: bold;
+        display: inline-block; color: @moreColor; font-size: 12px;
         &:hover { color: @link-color; }
     }
 
@@ -26,30 +26,38 @@
     &.dark {
         .panel-title, .panel-heading {
             color: #fff;
-            a { color: #fff; }
+            a { color: #fff; font-weight: normal; }
         }
     }
-    &._bg-gray { background: @gray; }
+    &._bg-gray { 
+        background: @darkGray; 
+        .panel-title{
+             margin-bottom: 20px !important; border-bottom: 0 !important;
+        }
+    }
     &._bg-blue {
-        background: @blue;
+        background: @style-color1;
         .panel-body { color: #fff; }
     }
     &.title-navy {
         .panel-heading {
-            background-color: @navy; font-size: 14px; font-weight: bold; line-height: 14px; padding: 0; color: #fff; text-indent: 10px; line-height: 34px;
+            font-size: 16px; line-height: 16px; padding: 0; color: @style-color1; text-indent: 10px; line-height: 34px; border-bottom: 2px solid @style-color3; margin-bottom: 9px;
             a {
-                color: #fff;  display: block; 
+                color: @style-color1;  display: block; padding-right: 11px;
+            }
+            &:after{
+                height: 2px; display: block; margin-top: -16px;
             }
         }
     }
     &.title-pattern {
         .panel-heading {
-            background-image: @patternHeader; background-repeat: repeat; background-position: center center;
+            
         }
         .panel-title {
-            background-image: @PatternLight; background-repeat: repeat; background-position: center center; height: 25px;
+            height: 33px;
             & > a {
-                background: @sectionColor none repeat scroll 0 0;color: #fff;display: inline-block;font-size: 12px;line-height: 25px;padding: 0 10px; transition: all 0.2s ease 0s; border-right: 6px solid #fff;
+                color: @style-color1; display: inline-block; font-size: 16px; line-height: 25px; padding-right: 10px; transition: all 0.2s ease 0s; font-weight: normal;
             }
         }
     }
@@ -68,10 +76,10 @@
     }
     &.news {
         .panel-heading {
-            padding: 0; font-weight: bold; font-family: Arial; text-transform: uppercase;
+            padding: 0; font-weight: bold; font-family: Arial; text-transform: uppercase; border-bottom: 2px solid @style-color3; margin-bottom: 9px;
             a {
-                display: inline-block; color: #fff; line-height: 25px; padding: 0 10px; background: @sectionColor; font-size: 12px; transition: all 0.2s; font-weight: bold;
-                &:hover { text-decoration: none; background: darken(@sectionColor, 10%); }
+                display: inline-block; color: @style-color1; line-height: 34px; padding: 6 10px; font-size: 16px; transition: all 0.2s; font-weight: normal;
+                &:hover { text-decoration: none; }
             }
         }
         .panel-body {
@@ -92,11 +100,11 @@
     }
     &.itemlist {
         padding: @grid-gutter-width / 2; padding-bottom: @grid-gutter-width; margin-left: -15px;
-        .panel-title { margin-bottom: @grid-gutter-width / 2; }
+        .panel-title { margin-bottom: @grid-gutter-width / 2; border-bottom: 2px solid @style-color3;}
         .pager {
             height: 0; overflow: visible; position: absolute; top: 50%; left: 0; width: 100%; margin-top: -16px;
             a {
-                color: @lightGray; float: left; display: block; font-size: 28px; line-height: 32px; margin-left: -(@grid-gutter-width /2); width: 30px; text-align: center;
+                color: @lightGray; float: left; display: block; font-size: 22px; line-height: 22px; margin-left: -(@grid-gutter-width /2); width: 30px; text-align: center;
                 &:hover { color: #fff; }
                 &.next { float: right; margin-left: 0; margin-right: -(@grid-gutter-width /2); }
                 & > i:before { width: auto; }
@@ -110,18 +118,18 @@
                     & ~ li { margin-left: @grid-gutter-width / 2; }
                     &:hover, &.active {
                         figure {
-                            & > a, & > img { border: 2px solid #fff; }
+                            & > a, & > img { border: 1px solid #fff; }
                             figcaption {
                                 &, a { color: #fff; }
                             }
                         }
                     }
                     figure {
-                        & > a, & > img { border: 2px solid @gray; transition: all 0.2s; }
+                        & > a, & > img { border: 1px solid @lightGray; transition: all 0.2s; margin-bottom: 9px;}
                         figcaption {
                             font-weight: bold;
                             a {
-                                color: @lightGray; display: block;
+                                color: @gray-lighter; display: block; font-weight: normal;
                                 &:hover { text-decoration: none; transition: all 0.2s; }
                             }
                         }
@@ -139,7 +147,7 @@
                         figure {
                             & > a, & > img { border: 0 none; }
                             figcaption {
-                                &, a { color: @text-color; padding-top: 4px; }
+                                &, a { color: #000; padding-top: 4px; }
                             }
                         }
                         &:hover, &.active {
@@ -153,7 +161,7 @@
         }
         &.pagers-header {
             .pager {
-                margin-top: 0; top: -40px; height: 25px; width: auto; float: right; left: auto; right: 0;
+                margin-top: 0; top: -38px; height: 25px; width: auto; float: right; left: auto; right: 0;
                 a {
                     height: 25px; width: 31px; background: @lightGray; float: left; border-left: 6px solid #fff; margin: 0; color: #fff; font-size: 18px; line-height: 25px; transition: 0.2s all;
                     &:hover { background: @sectionColor; }
@@ -212,14 +220,19 @@
         .panel-title {
             margin-bottom: @grid-gutter-width / 2;
             ul {
-                list-style: none; margin: 0; padding: 0; border: 0 none; border-bottom: 4px solid @lightGray; height: 41px; 
+                list-style: none; margin: 0; padding: 0; border: 0 none; border-bottom: 2px solid @style-color3; height: 41px; 
                 li {
-                    margin-bottom: 0;
                     &:hover, &.active {
-                        a { background: none; border-color: @red; }
+                        a { background: none; border-color: @style-color1; }
+                    }
+                    &:after{
+                        content:""; display: block; background: @style-color3; width: 1px; height: 14px; position: absolute; left: 0; top: 11px;
+                    }
+                    &:first-child:after{
+                        display: none;
                     }
                     a {
-                        border-radius: 0; font-size: 12px; font-weight: bold; color: @text-color; border: 0 none; border-bottom: 4px solid transparent; margin-bottom: -4px;
+                        border-radius: 0; font-size: 13px; font-weight: normal; color: @style-color1; border: 0 none; border-bottom: 3px solid transparent; margin-bottom: -4px;
                         &:hover { text-decoration: none; }
                     }
                 }
@@ -259,10 +272,10 @@
                     .desc {
                         margin-left: (@xLargeMainHalf / 2) - (@grid-gutter-width / 2);
                         h3 {
-                            font-size: 14px; font-weight: bold; line-height: 1.3; margin-top: 0;
+                            font-size: 14px; line-height: 1.3; margin-top: 0;
                             a {
                                 color: @text-color;
-                                &:hover { color: #000; text-decoration: none; }
+                                &:hover { color: @style-color1; text-decoration: none; }
                             }
                         }
                     }
@@ -272,7 +285,7 @@
                         .img { width: @xLargeMainHalf; }
                         .desc {
                             margin-left: (@xLargeMainHalf + (@grid-gutter-width /2));
-                            h3 { font-size: 24px; font-weight: bold; }
+                            h3 { font-size: 20px;}
                             p { color: @gray; }
                         }
                     }
@@ -294,7 +307,7 @@
             ul {
                 list-style: none;
                 li {
-                    padding-left: @grid-gutter-width; position: relative; font-weight: bold; margin-bottom: @grid-gutter-width / 2;
+                    padding-left: @grid-gutter-width; position: relative; margin-bottom: @grid-gutter-width / 2;
                     &:before { content: '■'; display: block; position: absolute; top: -5px; left: 0; color: @lightGray; font-size: 18px; transition: all 0.2s; }
                     &:hover {
                         &:before { color: @text-color; }
@@ -310,7 +323,7 @@
     }
     &.live-links {
         .panel-body {
-            background: @lightBlue;
+            background: @style-color4;
             ul {
                 padding: 10px 10px 0 10px;
                 li {
@@ -328,11 +341,11 @@
     }
     &.schedule {
         &.schedule-condensed {
-            .panel-heading { margin-bottom: 3px; }
+            .panel-heading { margin-bottom: 9px; }
             ul {
                 li {
-                    background: @PatternLight repeat center center #fff; padding: 12px 10px; margin-bottom: 1px; transition: all 0.2s;
-                    &:hover, &.current { background: @mediumGray; }
+                    padding: 12px 10px; margin-bottom: 1px; transition: all 0.2s; border-left: 4px solid @gray-lighter;
+                    &:hover, &.current { background: @style-color4; border-left: 4px solid @style-color1;}
                     a {
                         color: @text-color; display: block;
                     }
@@ -372,16 +385,17 @@
         form {
             label { font-weight: normal; }
             .input-group {
-                background: @PatternLight; padding: 10px 8px;
+                padding: 10px 8px;
                 .form-control { background: @lightBlue; font-size: 12px; color: @gray; }
             }
         }
     }
     &.banner {
-        .panel-title, .panel-heading { margin-bottom: 2px; }
+        .panel-title, .panel-heading { margin-bottom: 9px; }
     }
     &.sms {
         .panel-body {
+            min-height: 80px;
             .inner {
                 padding: (@grid-gutter-width / 2); padding-right: 70px; position: relative;
                 &:before { position: absolute; display: block; content: '\e805'; font-family: "wsicons"; font-size: 60px; top: 0; right: (@grid-gutter-width / 2); }
@@ -434,7 +448,7 @@
                     /*height: @itemlistItemHeight;*/ position: relative;
                     & > a {
                         /*background: @darkBlue; color: #fff;*/ 
-                        display: block; transition: 0.2s all; font-weight: bold;
+                        display: block; transition: 0.2s all;
                         span {
                             display: block;
                             &.img {
@@ -445,9 +459,9 @@
                         }
                     }
                     &:hover, &.active {
-                        &:before { display: block; content: ''; height: 100%; width: 9px; background: @sectionColor; top: 0; left: -9px; position: absolute; }
+                        &:before { display: block; content: ''; height: 100%; width: 9px; background: @style-color2; top: 0; left: -9px; position: absolute; }
                         & > a {
-                            background: @lightBlue; color: @darkBlue; text-decoration: none;
+                            background: @style-color4; color: @darkBlue; text-decoration: none;
                         }
                     }
                 }
@@ -463,7 +477,7 @@
                 li {
                     width: 25%; float: left; min-height: 160px;
                     &:hover, &.active {
-                        &:before { width: 100%; height: 9px; left: 0; top: -9px; }
+                        &:before { width: 100%; height: 4px; left: 0; top: -4px; }
                     }
                     & > a {
                         background: transparent; color: @navy;
@@ -554,6 +568,42 @@
             &.red { a { background: @gplus; } }
             &.red-dark { a { background: @pinterest; } }
             &.gray { a { background: @linkGray; } }
+        }
+    }
+}
+
+.col-sm-3, .col-md-3{
+    .panel{
+        &.title-navy, &.news{
+            .panel-heading{
+                // font-size: 14px;
+                &, a, h3{
+                    font-size: 14px;
+                }
+            }
+            .panel-body{
+                h3{
+                    font-weight: bold;
+                }
+            }
+            
+        }
+    }
+}
+.col-sm-4, .col-md-4{
+    .panel{
+        &.title-navy, &.news{
+            .panel-heading{
+                //font-size: 15px;
+                &, a, h3{
+                    font-size: 15px;
+                }
+            }
+            .panel-body{
+                h3{
+                    font-weight: bold;
+                }
+            }
         }
     }
 }
