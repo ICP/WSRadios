@@ -15,7 +15,7 @@
 	<body>
 		<?php include(dirname(__FILE__) . '/blocks/header.php'); ?>
 		<section id="main">
-			<div class="wrapper _light-orange _border-top _border-bottom">
+			<div id="ticker" class="wrapper _light-orange _border-top _border-bottom">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-8">

@@ -52,4 +52,28 @@ $(function () {
             });
         });
     }
+    $("#menu ul li.haschild").on('click', function(e) {
+        if ($("body").hasClass("_xs") || $("body").hasClass("_sm")) {
+            $(this).toggleClass('active');
+            e.preventDefault();
+        }
+    });
+    
+});
+function responsive_resize() {
+    var current_width = $(window).width();
+    if (current_width < 768) {
+        // XS
+        $('body').addClass("_xs").removeClass("_sm _md _lg");
+    } else if (current_width > 767 && current_width < 992) {
+        $('body').addClass("_sm").removeClass("_xs _md _lg");
+    } else if (current_width > 991 && current_width < 1200) {
+        $('body').addClass("_md").removeClass("_xs _sm _lg");
+    } else if (current_width > 1199) {
+        $('body').addClass("_lg").removeClass("_xs _sm _md");
+    }
+}
+responsive_resize();
+$(window).resize(function () { // Change width value on user resize, after DOM
+    responsive_resize();
 });
