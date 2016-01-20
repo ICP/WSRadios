@@ -22,6 +22,11 @@
                             <li><a href="#">News</a></li>
                             <li><a href="#">Radio</a></li>
                         </ul>
+                        <ul class="mobile-link list-unstyled hidden-md hidden-lg">
+                            <li class="hidden-sm" data-toggle="toggle" data-target="#languages"><a href="#"><i class="icon-language"></i></a></li>
+                            <li><a href="#" data-toggle="toggle-class" data-target=".search"><i class="icon-search"></i></a></li>
+                            <li><a href="#" data-toggle="toggle" data-target="#menu"><i class="icon-menu"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -30,7 +35,7 @@
     <div id="languages" class="languages" style="display: none;">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="col-xs-6 col-sm-4 col-md-2">
                     <ul>
                         <li><a href="#">Language name</a></li>
                         <li><a href="#">Language name</a></li>
@@ -42,7 +47,7 @@
                         <li><a href="#">Language name</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="col-xs-6 col-sm-4 col-md-2">
                     <ul>
                         <li><a href="#">Language name</a></li>
                         <li><a href="#">Language name</a></li>
@@ -54,7 +59,7 @@
                         <li><a href="#">Language name</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="col-xs-6 col-sm-4 col-md-2">
                     <ul>
                         <li><a href="#">Language name</a></li>
                         <li><a href="#">Language name</a></li>
@@ -66,7 +71,7 @@
                         <li><a href="#">Language name</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="col-xs-6 col-sm-4 col-md-2">
                     <ul>
                         <li><a href="#">Language name</a></li>
                         <li><a href="#">Language name</a></li>
@@ -78,7 +83,7 @@
                         <li><a href="#">Language name</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="col-xs-6 col-sm-4 col-md-2">
                     <ul>
                         <li><a href="#">Language name</a></li>
                         <li><a href="#">Language name</a></li>
@@ -90,7 +95,7 @@
                         <li><a href="#">Language name</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="col-xs-6 col-sm-4 col-md-2">
                     <ul>
                         <li><a href="#">Language name</a></li>
                         <li><a href="#">Language name</a></li>
