@@ -40,7 +40,8 @@ $(function () {
                 , autoplay: false
                 , responsive: {
                     0: {items: 2}
-                    , 480: {items: 4}
+                    , 480: {items: 2}
+                    , 720: {items: 4}
                 }
             });
             $this.find(".pager .next").click(function (e) {
