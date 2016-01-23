@@ -5,6 +5,12 @@ body.rtl {
         float: right;
     }
     .list-unstyled { padding-right: 0; }
+    #menu {
+        ul li {
+            float: right;
+            ul.child { left: auto; right: 0; }
+        }
+    }
     .nav-tabs > li { float: right; }
     .date.text-right { text-align: left; }
     .panel {
@@ -26,17 +32,11 @@ body.rtl {
             }
         }
         &.top-news {
-            .item { float: right; border-right: 0 none; border-lefT: 4px solid @lightGray; }
+            .item { float: right; border-right: 0 none; }
             .itemlist {
-                margin-left: 0; margin-right: 492px;
+                margin: 0;
                 ul li {
-                    &:hover, &.active {
-                        &:before { left: auto; right: -9px; }
-                    }
-                    & > a {
-                        span.img { float: right; }
-                        span.title { margin-left: 0; margin-right: 132px; }
-                    }
+                    & > a span.img { float: right; }
                 }
             }
         }
