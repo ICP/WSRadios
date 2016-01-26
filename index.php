@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/modernizr-2.6.2.min.js"></script>
 	</head>
-	<body class="rtl">
+	<body class="">
 		<?php include(dirname(__FILE__) . '/blocks/header.php'); ?>
 		<section id="main">
 			<div id="ticker" class="wrapper _light-orange _border-top _border-bottom">
@@ -306,7 +306,7 @@
 												<ul class="list-inline list-unstyled">
 													<li>
 														<figure>
-															<a class="img" href="#">
+															<a class="img video" href="#">
 																<img src="data/smpl1.jpg" alt="" />
 															</a>
 															<figcaption>

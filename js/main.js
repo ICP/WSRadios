@@ -31,13 +31,15 @@ $(function () {
 
     if ($(".panel.slider").length) {
         var $slider = $(".panel.slider");
+        var rtl = $("body").hasClass("rtl") ? true : false;
         $.each($slider, function () {
             var $this = $(this);
             var slider = $this.find(".items ul").owlCarousel({
                 loop: true
+                , rtl: rtl
                 , items: 4
                 , margin: 0
-                , autoplay: false
+                , autoPlay: false
                 , responsive: {
                     0: {items: 2}
                     , 480: {items: 2}
