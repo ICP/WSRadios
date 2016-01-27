@@ -22,8 +22,9 @@
         & > a {
             position: relative;
             &:before {
-                position: absolute; top: 50%; left: 50%; display: block; border: 1px solid @gray-lighter; border-radius: 100%; color: @gray-lighter; width: 40px; height: 40px; margin: -20px 0 0 -20px;
-                text-align: center; line-height: 40px; font-family: "wsicons"; transition: all 0.2s; font-size: 18px; text-indent: 0.1em; z-index: 10; box-shadow: 0 0 3px @gray; text-shadow: 0 0 3px @gray;
+                position: absolute; display: block; color: @gray-lighter; width: 40px; height: 40px;
+                text-align: center; line-height: 40px; font-family: "wsicons"; transition: all 0.2s; font-size: 18px; text-indent: 0.1em; z-index: 10;
+                top: 0; left: auto; right: 0; box-shadow: 0 0 transparent; text-shadow: 0 0 transparent; background: rgba(0, 0, 0, 0.6);
             }
         }
         &:hover {
