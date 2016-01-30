@@ -557,6 +557,72 @@
             }
         }
     }
+    &.radio-bar{
+        background: #e9f2f5; margin-bottom: 0;
+        .panel-title{
+            padding-right: 2px; text-transform: none;
+            a{
+                background: #00B1E2; color: #fff; font-weight: bold; text-align: center; line-height: 40px; font-size: 14px; cursor: pointer; display: block; text-decoration: none;
+            }
+        }
+        .panel-body{
+            padding-left: 2px; clear: none;
+            .content{
+                height: 37px;
+                .info{
+                    font-size: 12px;
+                    .icon{
+                        float: left; font-size: 18px;
+                    }
+                    .title{
+                        float: left; padding: 0 10px; line-height: 37px; color: #444; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-wrap: break-word; width: 85%;
+
+                    }
+                }
+                .icons{
+                    float: right; margin: 0; padding: 0;
+                    li{
+                        display: inline-block;
+                    }
+                    .icon{
+                        cursor: pointer; position: relative; font-size: 16px;
+                        &:hover{
+                            background: #00B1E2; color: #fff;
+                        }
+                        .title{
+                            position: absolute; bottom: -27px; display: none; color: #00B1E2; text-align: center; left: 50%; font-size: 14px; line-height: 24px;
+                            span{
+                                left: -50%; position: relative; background: rgba(255, 255, 255, 0.6); display: block; z-index: 10; padding: 0 8px;
+                            }
+                        }
+                        &:hover .title{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .progress{
+                height: 3px; background: #c5dfe8;
+                .seek{
+                    height: 100%; width: 0; background: #00B1E2;
+                    transition: 0.4s width;
+                }
+            }
+        }
+        .icon{
+            display: inline-block; height: 37px; width: 37px; color: #00B1E2; line-height: 37px; text-align: center; transition: .2s all;
+            &:before{
+                font-family: "wsicons";
+            }
+            &.audio:before{ content: '\e82d'; }
+            &.download:before{ content: '\e819'; }
+            &.archive:before{ content: '\e833'; }
+            &.mobile:before{ content: '\e805'; }
+            &.podcast:before{ content: '\e806'; }
+            &.schedule:before{ content: '\e829'; }
+            &.frequency:before{ content: '\e834'; }
+        }
+    }
 }
 .sharings {
     ul {

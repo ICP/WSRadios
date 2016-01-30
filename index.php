@@ -15,7 +15,40 @@
 	<body class="">
 		<?php include(dirname(__FILE__) . '/blocks/header.php'); ?>
 		<section id="main">
-			<div id="ticker" class="wrapper _light-orange _border-top _border-bottom">
+			<div class="panel radio-bar">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2 panel-title">
+							<a href="#">Listen Live</a>
+						</div>
+						<div class="col-sm-10 panel-body">
+							<div class="row content">
+								<div class="col-md-8 col-sm-7">
+									<div class="info">
+										<span class="icon audio"></span>
+										<span class="title">A Bomb Seemingly Misses Its Mark in Ukraine, and 11 More Civilians Die A Bomb Seemingly Misses Its Mark in Ukraine, and 11 More Civilians Die</span>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-5">
+									<ul class="icons">
+										<li><a class="icon archive" href="#"><span class="title"><span>Archive</span></span></a></li>
+										<li><a class="icon mobile" href="#"><span class="title"><span>Mobile</span></span></a></li>
+										<li><a class="icon download" href="#"><span class="title"><span>Download</span></span></a></li>
+										<li><a class="icon podcast" href="#"><span class="title"><span>Podcast</span></span></a></li>
+										<li><a class="icon schedule" href="#"><span class="title"><span>Schedule</span></span></a></li>
+										<li><a class="icon frequency" href="#"><span class="title"><span>Frequencies</span></span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="progress">
+								<div class="seek" style="width:30%"></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="ticker" class="wrapper _light-orange _border-top _border-bottom" style="display:none">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-8">

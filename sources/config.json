@@ -169,6 +169,12 @@
       "src": "entypo"
     },
     {
+      "uid": "96ea1be71f597a5bdfc8f791ada4f651",
+      "css": "archive-1",
+      "code": 59443,
+      "src": "entypo"
+    },
+    {
       "uid": "413717f5ea649e8d8b93938be277264a",
       "css": "calendar",
       "code": 59433,
@@ -196,6 +202,12 @@
       "uid": "wcb87qh0k9smu6zukdhbn5zip98zofkh",
       "css": "cancel-circle",
       "code": 59414,
+      "src": "modernpics"
+    },
+    {
+      "uid": "e6t4yvmv401e9gpo2anslq4uqy2iz692",
+      "css": "signal",
+      "code": 59444,
       "src": "modernpics"
     },
     {
