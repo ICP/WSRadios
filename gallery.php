@@ -73,6 +73,7 @@
 									</div>
 								</div>
 							</div>
+
 							<div id="gallery">
 								<div class="panel gallery">
 									<div class="panel-body">
@@ -245,6 +246,83 @@
 									</div>
 								</div>
 							</div>
+
+
+							<div class="panel cube-portfolio" >
+								<div class="panel-body">
+									<div class="row">
+										<ul class="list-unstyled">
+											
+												<li class="col-xs-12 col-sm-6">
+													<div class="cube">
+														<a class="inner" href="#">
+															<div class="img cover">
+																<img src="http://localhost/github/wsradios/data/smpl1.jpg" alt="" />
+															</div>
+															<div class="img caption-img">
+																<img src="http://localhost/github/wsradios/data/smpl1.jpg" alt="" />
+															</div>
+															<div class="caption-info">
+																<div class="title">A Bomb Seemingly Misses</div>
+																<div class="desc">The most powerful volcanic eruption in recorded history occurs on Krakatau. The most powerful volcanic eruption in recorded history occurs on Krakatau.</div>
+															</div>
+														</a>
+													</div>
+												</li>
+												<li class="col-xs-12 col-sm-6">
+													<div class="cube">
+														<a class="inner" href="#">
+															<div class="img cover">
+																<img src="http://localhost/github/wsradios/data/smpl1.jpg" alt="" />
+															</div>
+															<div class="img caption-img">
+																<img src="http://localhost/github/wsradios/data/smpl1.jpg" alt="" />
+															</div>
+															<div class="caption-info">
+																<div class="title">A Bomb Seemingly Misses Its Mark in Ukraine, and 11 More Civilians Die</div>
+																<div class="desc">The most powerful volcanic eruption in recorded history occurs on Krakatau. The most powerful volcanic eruption in recorded history occurs on Krakatau. The most powerful volcanic eruption in recorded history occurs on Krakatau.</div>
+															</div>
+														</a>
+													</div>
+												</li>
+												<li class="col-xs-12 col-sm-6">
+													<div class="cube">
+														<a class="inner" href="#">
+															<div class="img cover">
+																<img src="http://localhost/github/wsradios/data/smpl1.jpg" alt="" />
+															</div>
+															<div class="img caption-img">
+																<img src="http://localhost/github/wsradios/data/smpl1.jpg" alt="" />
+															</div>
+															<div class="caption-info">
+																<div class="title">A Bomb Seemingly Misses Its Mark in Ukraine, and 11 More Civilians Die</div>
+																<div class="desc">The most powerful volcanic eruption in recorded history occurs on Krakatau.</div>
+															</div>
+														</a>
+													</div>
+												</li>
+												<li class="col-xs-12 col-sm-6">
+													<div class="cube">
+														<a class="inner" href="#">
+															<div class="img cover">
+																<img src="http://localhost/github/wsradios/data/smpl1.jpg" alt="" />
+															</div>
+															<div class="img caption-img">
+																<img src="http://localhost/github/wsradios/data/smpl1.jpg" alt="" />
+															</div>
+															<div class="caption-info">
+																<div class="title">A Bomb Seemingly Misses Its Mark in Ukraine, and 11 More Civilians Die</div>
+																<div class="desc">The most powerful volcanic eruption in recorded history occurs on Krakatau.</div>
+															</div>
+														</a>
+													</div>
+												</li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+
 						</div>
 						<?php include(dirname(__FILE__) . '/blocks/sidebar.php'); ?>
 					</div>
