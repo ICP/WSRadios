@@ -18,18 +18,18 @@
 			<div class="panel radio-bar">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-3 col-md-2 panel-title">
+						<div class="col-sm-3 col-md-2 col-xs-12 panel-title">
 							<a href="#">Listen Live</a>
 						</div>
-						<div class="col-sm-9 col-md-10 panel-body">
-							<div class="row content">
-								<div class="col-md-8 col-sm-7">
+						<div class="col-sm-9 col-md-10 col-xs-12 panel-body">
+							<div class="content">
+								<div class="col-md-8 col-sm-7 col-xs-7">
 									<div class="info">
 										<span class="icon audio"></span>
-										<span class="title text-ellipsis">A Bomb Seemingly Misses Its Mark in Ukraine, and 11 More Civilians Die A Bomb Seemingly Misses Its Mark in Ukraine, and 11 More Civilians Die</span>
+										<span class="title text-ellipsis" title="title">A Bomb Seemingly Misses Its Mark in Ukraine, and 11 More Civilians Die.</span>
 									</div>
 								</div>
-								<div class="col-md-4 col-sm-5">
+								<div class="col-md-4 col-sm-5 col-xs-5">
 									<ul class="icons">
 										<li><a class="icon archive" href="#"><span class="title"><span>Archive</span></span></a></li>
 										<li><a class="icon mobile" href="#"><span class="title"><span>Mobile</span></span></a></li>

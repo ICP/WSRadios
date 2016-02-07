@@ -135,6 +135,29 @@ body.rtl {
         &.schedule {
             &.schedule-condensed ul li { border-left: 0 none; border-right: 4px solid #dedede; }
         }
+        &.radio-bar{
+            .panel-title{
+                padding-right: @grid-gutter-width / 2; padding-left: 2px;
+            }
+            .panel-body{
+                padding-left: @grid-gutter-width / 2; padding-right: 2px;
+                .content{
+                    .info{
+                        .icon{ float: right; }
+                        .title{ float: right; margin-left: 0; padding-left: 0; margin-right: -37px; padding-right: 37px; }
+                    }
+                }
+                .icons{
+                    float: left;
+                }
+            }
+        }
+        &.tabs{
+            .panel-title ul li{
+                &:first-child:after{display:block}
+                &:last-child:after{display:none}
+            }
+        }
     }
     #item {
         .item-media {
@@ -153,8 +176,19 @@ body.rtl {
         .item-text {
             blockquote { float: left; margin-right: 0; margin-left: -219px; }
         }
+        &.satellites .item-collpasibles .panel-default>.panel-heading h4 a i{
+            float: left;
+        }
     }
     .sharings {
         ul li ~ li { margin-left: 0; margin-right: 6px; }
+    }
+    table td[class*=col-], table th[class*=col-] {
+        position: static;
+        float: none;
+        display: table-cell;
+    }
+    th {
+        text-align: right;
     }
 }

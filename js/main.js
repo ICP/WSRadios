@@ -41,9 +41,10 @@ $(function () {
                 , margin: 0
                 , autoPlay: false
                 , responsive: {
-                    0: {items: 2}
-                    , 480: {items: 2}
-                    , 720: {items: 4}
+                    0: {items: 1}
+                    , 430: {items: 2}
+                    , 600: {items: 3}
+                    , 740: {items: 4}
                 }
             });
             $this.find(".pager .next").click(function (e) {
