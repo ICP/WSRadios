@@ -62,7 +62,6 @@ $(function () {
             e.preventDefault();
         }
     });
-
 });
 function responsive_resize() {
     var current_width = $(window).width();
@@ -77,7 +76,22 @@ function responsive_resize() {
         $('body').addClass("_lg").removeClass("_xs _sm _md");
     }
 }
+
+function text_ellipsis()
+{
+    $('.text-ellipsis').each(function(index, el) {
+        $e = $(el);
+        var height = $e.height();
+        if(height > 0) $e.dotdotdot({height: height});
+    });
+
+}
 responsive_resize();
 $(window).resize(function () { // Change width value on user resize, after DOM
     responsive_resize();
+    text_ellipsis();
+});
+
+$(document).ready(function() {
+    text_ellipsis();
 });

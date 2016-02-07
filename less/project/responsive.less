@@ -140,7 +140,12 @@
         .toggle-search { display: none; }
     }
     .panel {
-        &.tabs .panel-title ul { height: auto; }
+        &.tabs .panel-title ul { 
+            height: auto;
+            li a{
+                margin-bottom: -1px;
+            }
+        }
         &.itemlist {
             .items {
                 ul {

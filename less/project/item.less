@@ -65,6 +65,30 @@
             float: right; margin: -(@grid-gutter-width / 2) -(165px + @grid-gutter-width) 0 0; width: 165px; border: 0 none; font-size: 14px; font-weight: bold; background: darken(@lightGray, 10%); color: #fff; padding: (@grid-gutter-width / 2);
         }
     }
+    &.satellites {
+        input { border-radius: 0; font-weight: normal; padding: 0 6px; height: 25px; }
+        .item-collpasibles {
+            .panel-default > .panel-heading {
+                background: transparent; border: 0 none; padding: 0;
+                h4 {
+                    text-transform: none !important; font-size: 16px; background: #f7f7f7; 
+                    a {
+                        background: transparent; display: block; line-height: 36px; padding: 6px 10px; outline: 0 none; font-weight: normal;
+                        i { float: right; }
+                        &.active {
+                            i:before{ content: '\e814'; }
+                        }
+                    }
+                }
+                a {
+                    color: #333;
+                    text-decoration: none;
+                    &:hover { color: @style-color1; }
+                }
+            }
+            .panel-body { border: 0 none; }
+        }
+    }
 }
 #gallery {
     .panel {
