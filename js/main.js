@@ -38,7 +38,7 @@ $(function () {
                 loop: true
                 , rtl: rtl
                 , items: 4
-                , margin: 0
+                , margin: 10
                 , autoPlay: false
                 , responsive: {
                     0: {items: 1}
