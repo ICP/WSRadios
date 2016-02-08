@@ -12,7 +12,7 @@
                     li {
                         width: 25%; float: left; min-height: 160px;
                         &:hover, &.active {
-                            &:before { width: 100%; height: 9px; left: 0; top: -9px; }
+                            &:before { width: 100%; left: 0; }
                         }
                         & > a {
                             background: transparent; color: @navy;
@@ -119,7 +119,8 @@
         }
     }
     .lang-select { top: 18px; }
-    .header-menu { margin-right: 80px; }
+    .header-menu {margin-right: 80px; }
+    body.rtl .header-menu{ margin-left: 80px; margin-right: 0;}
     .mobile-link {
         position: absolute; top: 8px; right: 0;
         li {
