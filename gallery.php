@@ -327,7 +327,7 @@
 								</div>
 							</div>
 
-							<div class="panel cube cube-fade" >
+							<div class="panel cube cube-zoom" >
 								<div class="panel-body">
 									<div class="row">
 										<ul class="list-unstyled">

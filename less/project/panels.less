@@ -122,7 +122,7 @@
             padding: 0 30px;
             ul {
                 li {
-                    float: left; width: 160px; padding: 0;
+                    float: left; padding: 0;
                     & ~ li { margin-left: @grid-gutter-width / 2; }
                     &:hover, &.active {
                         figure {
@@ -150,7 +150,6 @@
                 padding: 0;
                 ul {
                     li {
-                        width: 173px;
                         & ~ li { margin-left: (@grid-gutter-width / 2) - 1; }
                         figure {
                             & > a, & > img { border: 0 none; }
@@ -460,6 +459,9 @@
                     }
                     .img { position: relative; z-index: 100; }
                 }
+                &.audio>a:before, &.gallery>a:before, &.video>a:before{
+                    width: 60px; height: 60px; line-height: 60px; font-size: 25px;
+                }
             }
             figcaption {
                 position: absolute; left: 0; bottom: 0; width: 100%; z-index: 12;
@@ -756,9 +758,13 @@
                 }
             }
         }
-        &.cube-fade{
+        &.cube-zoom{
             .item{
                 .inner{
+                    .caption-img{
+                        .transition(-webkit-transform .6s cubic-bezier(0.19,1,.22,1));
+                        .transition(transform .6s cubic-bezier(0.19,1,.22,1));
+                    }
                     .caption-info{
                         position: absolute;
                         top: 0;
@@ -768,7 +774,7 @@
                         z-index: 2;
                         width: 100%;
                         padding: 16px 22px;
-                        .transition(opacity .6s cubic-bezier(0.19,1,.22,1));
+                        .transition(all .6s cubic-bezier(0.19,1,.22,1));
                         overflow: hidden;
                         line-height: 1.5;
                         word-wrap: break-word;
@@ -781,10 +787,16 @@
                             color: #BBB;
                             font-size: 14px;
                         }
+                        .scale(1.05);
                     }
                     &:hover{
+                       .caption-img{
+                            .scale(1.15);
+
+                        }
                         .caption-info{
                             opacity: 1;
+                            .scale(1);
                         }
                     }
                 }

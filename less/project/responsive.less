@@ -30,7 +30,6 @@
             .items {
                 ul {
                     li {
-                        width: 127px;
                         figcaption {
                             font-size: 13px;
                             a { outline: 0 none; display: block; padding-top: 4px; }
@@ -40,13 +39,6 @@
             }
             &.light {
                 padding: 0;
-                .items {
-                    ul {
-                        li {
-                            width: 143px;
-                        }
-                    }
-                }
             }
             &.vertical {
                 .items {
@@ -147,20 +139,6 @@
                 margin-bottom: -1px;
             }
         }
-        &.itemlist {
-            .items {
-                ul {
-                    li { width: 153px; }
-                }
-            }
-            &.light {
-                .items {
-                    ul {
-                        li { width: 168px; }
-                    }
-                }
-            }
-        }
         &.digest {
             &.thumbs {
                 ul {
@@ -197,6 +175,15 @@
                 }
             }
         }
+        &.top-news{
+            .item{
+                .img{
+                    &.audio>a:before, &.gallery>a:before, &.video>a:before{
+                        width: 40px; height: 40px; line-height: 40px; font-size: 18px;
+                    }
+                }
+            }
+        }
     }
 }
 // XS
@@ -227,13 +214,6 @@
             .itemlist { display: none; }
         }
         &.itemlist {
-            &.light {
-                .items {
-                    ul {
-                        li { width: 179px; }
-                    }
-                }
-            }
             &.vertical {
                 .items {
                     ul {
