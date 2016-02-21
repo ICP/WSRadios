@@ -30,10 +30,32 @@
         &:hover {
             & > a:before { border-color: #fff; color: #fff; }
         }
+        &.img-large{
+            & > a {
+                &:before {
+                    width: 60px; height: 60px; line-height: 60px; font-size: 25px;
+                }
+            }
+        }
     }
     &.video > a:before { content: '\e808' }
     &.audio > a:before { content: '\e82d' }
     &.gallery > a:before { content: '\e82c' }
+}
+[class*=" type-"], [class^=type-] {
+    position: relative;
+    &:before {
+        position: absolute; display: block; color: @gray-lighter; width: 40px; height: 40px;
+        text-align: center; line-height: 40px; font-family: "wsicons"; transition: all 0.2s; font-size: 18px; text-indent: 0.1em; z-index: 10;
+        top: 0; left: auto; right: 0; box-shadow: 0 0 transparent; text-shadow: 0 0 transparent; background: rgba(0, 0, 0, 0.6);
+    }
+    &:hover {
+        &:before { border-color: #fff; color: #fff; }
+    }
+
+    &.type-video:before { content: '\e808' }
+    &.type-audio:before { content: '\e82d' }
+    &.type-gallery:before { content: '\e82c' }
 }
 .text-ellipsis{
     overflow: hidden;
