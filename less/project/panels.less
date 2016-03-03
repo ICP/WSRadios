@@ -29,7 +29,12 @@
     &.dark {
         .panel-title, .panel-heading {
             color: #fff;
-            a { color: #fff; font-weight: normal; }
+            a { color: #fff; font-weight: normal;}
+        }
+        &.slider{
+            .panel-title a{
+                 padding: 0 30px;
+            }
         }
     }
     &._bg-gray { 
@@ -140,7 +145,7 @@
                         figcaption {
                             font-weight: bold;
                             a {
-                                color: @gray-lighter; display: block; font-weight: normal; padding-top: 6px; .text-ellipsis(14px);
+                                color: @gray-lighter; display: block; font-weight: normal; padding-top: 6px;
                                 &:hover { text-decoration: none; transition: all 0.2s; }
                             }
                         }
