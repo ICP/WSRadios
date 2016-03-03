@@ -94,5 +94,5 @@ $(window).resize(function () { // Change width value on user resize, after DOM
 });
 
 $(document).ready(function() {
-    text_ellipsis();
+    setTimeout(text_ellipsis, 20);
 });

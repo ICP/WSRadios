@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/modernizr-2.6.2.min.js"></script>
 	</head>
-	<body>
+	<body class="rtl">
 		<?php include(dirname(__FILE__) . '/blocks/header.php'); ?>
 		<section id="main">
 			<div class="wrapper _light-blue _border-top _border-bottom">
@@ -243,6 +243,49 @@
 												</li>
 											</ul>
 										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel cube cube-episode">
+								<div class="panel-body">
+									<div class="row">
+										<ul class="list-unstyled">
+											
+												<li class="col-xs-12 col-sm-6">
+													<div class="item">
+														<a class="inner" href="#">
+															<div class="img caption-img">
+																<img src="http://localhost/github/wsradios/data/smpl1.jpg" alt="" />
+															</div>
+															<div class="caption-info text-ellipsis">
+																<div class="title">
+																	<div class="episode small">208</div>
+																	<div class="name">A Bomb Seemingly Misses Its Mark in Ukraines</div>
+																</div>
+																<div class="desc">The most powerful volcanic eruption in recorded history occurs on Krakatau. The most powerful volcanic eruption in recorded history occurs on Krakatau.</div>
+															</div>
+														</a>
+													</div>
+												</li>
+												<li class="col-xs-12 col-sm-6">
+													<div class="item">
+														<a class="inner" href="#">
+															<div class="img caption-img">
+																<img src="http://localhost/github/wsradios/data/smpl1.jpg" alt="" />
+															</div>
+															<div class="caption-info text-ellipsis">
+																<div class="title">
+																	<div class="episode">20</div>
+																	<div class="name">A Bomb Seemingly Misses Its Mark in Ukraine, and 11 More Civilians Die</div>
+																</div>
+																<div class="desc">The most powerful volcanic eruption in recorded history occurs on Krakatau. The most powerful volcanic eruption in recorded history occurs on Krakatau. The most powerful volcanic eruption in recorded history occurs on Krakatau. The most powerful volcanic eruption in recorded history occurs on Krakatau.</div>
+															</div>
+														</a>
+													</div>
+												</li>
+
+										</ul>
 									</div>
 								</div>
 							</div>

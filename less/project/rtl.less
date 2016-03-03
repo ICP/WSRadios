@@ -158,6 +158,35 @@ body.rtl {
                 &:last-child:after{display:none}
             }
         }
+        &.cube-episode{
+            .item .inner .caption-info{
+                .title{
+                    .episode, .name{
+                        float: right;
+                    }
+                }
+            }
+        }
+        &.wrench{
+            .panel-body{
+                .item{
+                    article{
+                        .date{ float: left; }
+                    }
+                }
+            }
+        }
+        &.list{
+            .panel-body .item{
+                &.featured{
+                    article{ padding-right: 0;}
+                }
+                &[class*=" inline-"], &[class^=inline-]{
+                    figure{ float: right; }
+                    article{ float: right;  padding-right: 10px; padding-left: 0;}
+                }
+            }
+        }
     }
     #item {
         .item-media {
