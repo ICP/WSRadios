@@ -329,6 +329,42 @@
       "css": "search",
       "code": 59392,
       "src": "websymbols"
+    },
+    {
+      "uid": "cc20f2a7fa05a475130c406740bbbd26",
+      "css": "instagram",
+      "code": 59446,
+      "src": "brandico"
+    },
+    {
+      "uid": "c7715df42d0413b3cae83d4bc3943a3e",
+      "css": "soundcloud",
+      "code": 59447,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "9d3e9faf68fd4e12def853f0d4e1173b",
+      "css": "whatsapp",
+      "code": 59448,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "38575a803c4da31ce20d77e1e1236bcb",
+      "css": "telegram",
+      "code": 59449,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ea0cb6bedac64ae7933b03dad3130ef6",
+      "css": "yandex",
+      "code": 59450,
+      "src": "brandico"
+    },
+    {
+      "uid": "f3d95e13eb43f3f6b8efe1eb424a1e3b",
+      "css": "vkontakte",
+      "code": 59451,
+      "src": "fontawesome"
     }
   ]
 }

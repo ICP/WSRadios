@@ -56,13 +56,24 @@
         }
     }
     .item-text {
-        .introtext { color: darken(@gray, 10%); margin-bottom: (@grid-gutter-width / 2); }
+        font-size: 16px;
+        line-height: 1.6;
+        .introtext { margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px dotted #ddd;}
         .item-source {
             display: inline-block; font-weight: bold;
             &:after { content: ' - ' }
         }
         blockquote {
             float: right; margin: -(@grid-gutter-width / 2) -(165px + @grid-gutter-width) 0 0; width: 165px; border: 0 none; font-size: 14px; font-weight: bold; background: darken(@lightGray, 10%); color: #fff; padding: (@grid-gutter-width / 2);
+        }
+        figure{
+            padding: 15px 0;
+            figcaption{
+                font-size: 14px;
+            }
+            img{
+                max-width: 100%;
+            }
         }
     }
     &.satellites {

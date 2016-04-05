@@ -248,6 +248,7 @@
 							</div>
 
 							<div class="panel cube cube-episode">
+								<div class="panel-heading"><h3>Breaking News</h3></div>
 								<div class="panel-body">
 									<div class="row">
 										<ul class="list-unstyled">
@@ -291,6 +292,7 @@
 							</div>
 
 							<div class="panel cube cube-portfolio" >
+								<div class="panel-heading"><h3><a href="#">Breaking News</a></h3></div>
 								<div class="panel-body">
 									<div class="row">
 										<ul class="list-unstyled">

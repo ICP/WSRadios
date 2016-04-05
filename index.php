@@ -83,10 +83,10 @@
 												<figure class="img video">
 													<a href="#">
 														<img src="data/smpl1.jpg" alt="" />
+														<figcaption>
+															<h2>Ukraine: The International Wainal Is Obama, Not Putin</h2>
+														</figcaption>
 													</a>
-													<figcaption>
-														<h2><a href="#">Ukraine: The International Wainal Is Obama, Not Putin</a></h2>
-													</figcaption>
 												</figure>
 											</div>
 											<div class="itemlist">
