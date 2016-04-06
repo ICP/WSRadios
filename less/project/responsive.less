@@ -224,7 +224,8 @@
                             padding-left: @grid-gutter-width / 4;      
                         }
                         &:nth-child(2n+1){
-                            padding-right: @grid-gutter-width / 4;      
+                            padding-right: @grid-gutter-width / 4;
+                            clear: both;    
                         }
                         &:before, &:active:before, &:hover:before{
                             display: none !important;
@@ -299,6 +300,14 @@
         }
         .social-icons{
             text-align: center;
+        }
+    }
+    section .container .row > div{
+        .panel {
+            margin-bottom: @grid-gutter-width * 2.5;
+        } 
+        &:last-child .panel{
+            margin-bottom: 0;
         }
     }
 }
