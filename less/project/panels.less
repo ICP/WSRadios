@@ -104,7 +104,7 @@
         }
         .desc {
             h3 {
-                margin: 10px 0 16px; font-weight: bold; .text-ellipsis(16px);
+                margin: 10px 0 16px; font-weight: bold; font-size: 16px;
                 a {
                     display: inline-block; color: @text-color; transition: all 0.2s;
                     &:hover { color: #000; text-decoration: none; }
@@ -495,7 +495,7 @@
                                 float: none; width: 100%; height: auto;
                                 img { display: block; height: auto; width: 100%; }
                             }
-                            &.title {.text-ellipsis(14px, 3); margin-left: 0; padding: 0 8px; margin-top: 8px;}
+                            &.title {.text-ellipsis(14px, 5); margin-left: 0; padding: 0 8px; margin-top: 8px;}
                         }
                     }
                     &:hover, &.active {
@@ -748,12 +748,9 @@
                                 &.small{
                                     font-size: 45px;
                                 }
-                                &.xsmall{
-                                    font-size: 30px;
-                                }
                             }
                             .name{
-                                color: #FFF; float: left; width: 70%; .text-ellipsis(17px, 3); padding-left: 5px;
+                                color: #FFF; float: left; width: 70%; font-size: 17px; padding-left: 5px;
                             }
                             &:after{
                                 content: ''; clear: both; height: 0; display: block;
@@ -766,6 +763,26 @@
                     &:hover{
                         .caption-info{
                             background: rgba(0, 0, 0, 0.8);
+                        }
+                    }
+                }
+            }
+            &.cube-episode-small{
+                .item{
+                    .inner{
+                        .caption-info{
+                            padding: 10px 5px;
+                            .title{
+                                .episode{
+                                    font-size: 45px;
+                                    &.small{
+                                        font-size: 30px;
+                                    } 
+                                }
+                                .name{
+                                    font-size: 16px;
+                                }
+                            }
                         }
                     }
                 }
@@ -808,7 +825,7 @@
                 article{
                     .title{
                         color: @text-color;
-                        .text-ellipsis(18px);
+                        font-size: 18px;
                     }
                     .date{
                         float: right; color: lighten(@text-color, 40%); font-size: 11px; line-height: 1; padding-top: 7px;
@@ -818,7 +835,7 @@
                     }
                     &:only-child{
                         .title{
-                            .text-ellipsis(14px);
+                            font-size: 14px;
                         }
                     }
                 }
@@ -834,7 +851,7 @@
                         article{
                              width: 100%; float: none; padding-left: 0;
                             .title{
-                                .text-ellipsis(20px); font-weight: 400;
+                                font-size: 20px; font-weight: 400;
                             }
                         }
                     }
@@ -856,7 +873,7 @@
                                 width: 100%; float: none; padding-left: 0;
                             }
                             .title{
-                                .text-ellipsis(14px);
+                                font-size: 14px;
                             }
                         }
                         

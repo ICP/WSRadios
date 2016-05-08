@@ -213,7 +213,7 @@
             .item { 
                 border-bottom: 0 none;
                 .img figcaption h2{
-                    .text-ellipsis(20px);
+                    .text-ellipsis(20px, 3);
                 }
             }
             .itemlist {
@@ -302,12 +302,16 @@
             text-align: center;
         }
     }
-    section .container .row > div{
-        .panel {
-            margin-bottom: @grid-gutter-width * 2.5;
+    section{
+        .container, .container-fluid{
+            .row > div{
+                .panel {
+                    margin-bottom: @grid-gutter-width * 2.5;
+                } 
+                &:last-child .panel{
+                    margin-bottom: 0;
+                }
+            } 
         } 
-        &:last-child .panel{
-            margin-bottom: 0;
-        }
     }
 }
