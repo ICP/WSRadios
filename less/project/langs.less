@@ -20,15 +20,6 @@
   font-style: normal;
 }
 
-@font-face{ 
-	font-family: 'Vazir';
-	src: url('vazir/Vazir.eot');
-	src: url('vazir/Vazir.eot?#iefix') format('embedded-opentype'),
-	     url('vazir/Vazir.woff') format('woff'),
-	     url('vazir/Vazir.ttf') format('truetype'),
-	     url('vazir/Vazir.svg#webfont') format('svg');
-}
-
 
 body{
 	font-family: @fontFamily;
@@ -42,9 +33,4 @@ body{
 	&.lang-russian, &.lang-german{
 		font-family: 'NotoSerif',@fontFamily;
 	}
-
-	&.lang-persian{
-		font-family:'Vazir',@fontFamily;
-	}
-
 }
