@@ -203,6 +203,7 @@
         margin: 0; position: absolute; float: none; left: 0; top: @header-height; width: 100%; text-align: center;
         li {  }
     }
+    body.rtl .header-menu{ margin-left: 0;}
     #ticker { display: none; }
     .panel {
         &.ticker {
@@ -287,6 +288,21 @@
         &.radio-bar{
             .panel-title{
                 padding: 0;
+            }
+        }
+        &.schedule-bar{
+            .item{
+                .title{ font-size: 14px; line-height: 22px;}
+                .time{ font-size: 15px;}
+                &.onair{
+                    .title{font-size: 14px;}
+                    .time{font-size: 14px;}
+
+                }
+                &:nth-child(n+4){
+                    display: none;
+                }
+
             }
         }
         &.wslider .wslider-viewport .wslider-slider .gallery-cell h2{

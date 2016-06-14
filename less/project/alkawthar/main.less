@@ -1,0 +1,63 @@
+#masthead {
+    background-color: #FFFFFF;
+    border-bottom: 3px solid @style-color2;
+}
+#header .logo a{
+    width: 180px;
+    height: 77px;
+    background: url('../img/alkawthartv-logo.png') no-repeat 0 0 transparent;
+    background-size: 180px 77px;
+}
+#menu ul li{
+	a{
+		border-top: 3px solid transparent;
+		border-bottom: 0;
+		color: #FFF;
+	}
+	&.active>a, &:hover>a{
+		border-top-color: @style-color2;
+		border-top-color: @style-color2;
+	}
+}
+.lang-select{
+	display: none;
+}
+.search .form-group .form-control:focus{
+    background: #003E5D;
+}
+
+.panel{
+
+	&.list.bullets ul li:hover:before{
+		color: @style-color1;
+	}
+	&.title-pattern .panel-title>a, &.tabs .panel-title ul li a{
+		font-weight: bold;
+	}
+	&._bg-gray{
+		background: @style-color1;
+	}
+	&.itemlist .pager a{
+		color: #fff;
+		&:hover{color: @style-color2;}
+	}
+}
+
+.panel-heading, .panel.news .panel-heading, .panel.title-navy .panel-heading, .panel.tabs .panel-title ul, .panel.itemlist .panel-title{
+	border-bottom-color: @style-color1;
+	&, h2, h3, h4{font-weight: bold;}
+}
+
+.footer-menu dt {
+	border-bottom: 1px solid white;
+}
+#footer{
+    border-top: 3px solid #F3BE00;
+	.footer-logo {
+	    width: 268px;
+	    height: 86px;
+	    background: url('../img/alkawthartv-logo.png') no-repeat 0 0 transparent;
+	    background-size: 230px;
+	}
+
+} 

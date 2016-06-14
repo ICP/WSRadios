@@ -48,6 +48,34 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="panel schedule-bar " style="display:block;">
+				<div class="row">
+					
+					<a href="#" class="item onair col-md-3 col-sm-3 col-xs-4">
+						<div class="title">Program Title</div>
+						<div class="time">NOW</div>
+					</a>
+					
+					<a href="#" class="item col-md-2 col-sm-3 col-xs-4">
+						<div class="title">Program Title</div>
+						<div class="time">14:53</div>
+					</a>
+					
+					<a href="#" class="item col-md-2 col-sm-3 col-xs-4">
+						<div class="title">Program Title</div>
+						<div class="time">14:53</div>
+					</a>
+
+					<a href="#" class="item col-md-2 col-sm-3 col-xs-4">
+						<div class="title">Program Title</div>
+						<div class="time">14:53</div>
+					</a>
+
+				</div>
+			</div>
+
+
 			<div id="ticker" class="wrapper _light-orange _border-top _border-bottom" style="display:none">
 				<div class="container">
 					<div class="row">
