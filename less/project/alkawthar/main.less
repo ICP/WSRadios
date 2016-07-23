@@ -41,11 +41,22 @@
 		color: #fff;
 		&:hover{color: @style-color2;}
 	}
+	&.schedule-bar .item{
+		.time{color: @style-color11;}
+		&.onair{
+			background: @style-color11;
+			.time{color: #FFF;}
+		}
+
+	}
 }
 
 .panel-heading, .panel.news .panel-heading, .panel.title-navy .panel-heading, .panel.tabs .panel-title ul, .panel.itemlist .panel-title{
 	border-bottom-color: @style-color1;
 	&, h2, h3, h4{font-weight: bold;}
+}
+.section-dark .panel-heading{
+	border-bottom-color: #FFF;
 }
 
 .footer-menu dt {

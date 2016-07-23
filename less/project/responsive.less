@@ -84,6 +84,23 @@
                 }
             }
         }
+        &.wrench{
+            &.special{
+                .panel-body .item{
+                    /* one item */
+                    &:first-child:nth-last-child(1) {
+                        width: 100%;
+                    }
+                    /* three item */
+                    &:first-child:nth-last-child(3),
+                    &:first-child:nth-last-child(3) ~ .item {
+                        &:nth-child(n+2){
+                            .desc{display: none;}
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 // SM
@@ -180,6 +197,37 @@
                 .img{
                     &.audio>a:before, &.gallery>a:before, &.video>a:before{
                         width: 40px; height: 40px; line-height: 40px; font-size: 18px;
+                    }
+                }
+            }
+        }
+        &.schedule-bar{
+            .item{
+                &:nth-child(n+5){display: none;}
+            }
+        }
+        &.wrench{
+            &.special{
+                .panel-body .item{
+                    article{
+                        height: 54px;
+                       .title{
+                            font-size: 18px;
+                            min-height: 54px;
+                        }
+                    }
+                    /* one item */
+                    &:first-child:nth-last-child(1) {
+                        // width: 100%;
+                    }
+                    /* three item */
+                    &:first-child:nth-last-child(3),
+                    &:first-child:nth-last-child(3) ~ .item {
+                        &:nth-child(n+2){
+                            article{
+                                .title{font-size: 15px; }
+                            }
+                        }
                     }
                 }
             }
@@ -307,6 +355,59 @@
         }
         &.wslider .wslider-viewport .wslider-slider .gallery-cell h2{
             font-size: 16px;
+        }
+        &.wrench{
+            &.special{
+                .panel-body .item{
+                    width: 100% !important;
+                    /* one item */
+                    &:first-child:nth-last-child(1) {
+                        padding: 0 10px;
+                        figure{
+                            float: none; width: 100%; padding: 0;
+                        }
+                        article{
+                            position: relative; background: transparent; padding: 10px 0; margin: 0; overflow: visible; height: auto; float: none; width: 100%;
+                            .title{
+                                min-height: auto; margin-bottom: 10px; font-weight: bold;
+                            }
+                        }
+                        margin-bottom: 20px;
+                    }
+                    /* two items */
+                    &:first-child:nth-last-child(2),
+                    &:first-child:nth-last-child(2) ~ .item {
+                        padding: 0 10px;
+                            article{
+                                position: relative; background: transparent; padding: 10px 0; margin: 0 !important; overflow: visible; height: auto;
+                                .title{
+                                    min-height: auto; margin-bottom: 10px; font-weight: bold;
+                                }
+                            }
+                            margin-bottom: 20px;
+
+                    }
+                    /* three item */
+                    &:first-child:nth-last-child(3),
+                    &:first-child:nth-last-child(3) ~ .item {
+                        &:first-child{
+                            padding: 0 10px;
+                            article{
+                                position: relative; background: transparent; padding: 10px 0; margin: 0; overflow: visible; height: auto;
+                                .title{
+                                    min-height: auto; margin-bottom: 10px; font-weight: bold;
+                                }
+                            }
+                            margin-bottom: 20px;
+                        }
+                        &:nth-child(n+2){
+                            article{
+                                .title{font-size: 14px; }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     #footer {

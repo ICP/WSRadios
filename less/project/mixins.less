@@ -5,3 +5,20 @@
 	overflow: hidden;
 	word-wrap: break-word;
 }
+
+.rtl-float-grid-columns(@class) {
+  .col(@index) { // initial
+    @item: ~"body.rtl .col-@{class}-@{index}";
+    .col((@index + 1), @item);
+  }
+  .col(@index, @list) when (@index =< @grid-columns) { // general
+    @item: ~"body.rtl .col-@{class}-@{index}";
+    .col((@index + 1), ~"@{list}, @{item}");
+  }
+  .col(@index, @list) when (@index > @grid-columns) { // terminal
+    @{list} {
+      float: right;
+    }
+  }
+  .col(1); // kickstart it
+}

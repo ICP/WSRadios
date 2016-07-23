@@ -1,24 +1,44 @@
 
 @font-face {
   font-family: 'NotoSerif';
-  src: url('../font/notoserif/NotoSerif.eot?#iefix') format('embedded-opentype'),  url('../font/notoserif/NotoSerif.woff') format('woff'), url('../font/notoserif/NotoSerif.ttf')  format('truetype'), url('../font/notoserif/NotoSerif.svg#NotoSerif') format('svg');
+  src: url('../font/notoserif/NotoSerif.eot?#iefix') format('embedded-opentype'),  
+	   url('../font/notoserif/NotoSerif.woff') format('woff'), 
+	   url('../font/notoserif/NotoSerif.ttf')  format('truetype'), 
+	   url('../font/notoserif/NotoSerif.svg#NotoSerif') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'NotoNaskhArabic';
-  src: url('../font/notonaskh/NotoNaskhArabic.eot?#iefix') format('embedded-opentype'),  url('../font/notonaskh/NotoNaskhArabic.woff') format('woff'), url('../font/notonaskh/NotoNaskhArabic.ttf')  format('truetype'), url('../font/notonaskh/NotoNaskhArabic.svg#NotoNaskhArabic') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'NotoNaskhArabic';
+//   src: url('../font/notonaskh/NotoNaskhArabic.eot?#iefix') format('embedded-opentype'),  
+//   	   url('../font/notonaskh/NotoNaskhArabic.woff') format('woff'), 
+//   	   url('../font/notonaskh/NotoNaskhArabic.ttf')  format('truetype'), 
+//   	   url('../font/notonaskh/NotoNaskhArabic.svg#NotoNaskhArabic') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 @font-face {
   font-family: 'SolaimanLipiNormal';
-  src: url('../font/bn-solaimanlipi/SolaimanLipiNormal.eot?#iefix') format('embedded-opentype'),  url('../font/bn-solaimanlipi/SolaimanLipiNormal.woff') format('woff'), url('../font/bn-solaimanlipi/SolaimanLipiNormal.ttf')  format('truetype'), url('../font/bn-solaimanlipi/SolaimanLipiNormal.svg#SolaimanLipiNormal') format('svg');
+  src: url('../font/bn-solaimanlipi/SolaimanLipiNormal.eot?#iefix') format('embedded-opentype'),  
+     url('../font/bn-solaimanlipi/SolaimanLipiNormal.woff') format('woff'), 
+     url('../font/bn-solaimanlipi/SolaimanLipiNormal.ttf')  format('truetype'), 
+     url('../font/bn-solaimanlipi/SolaimanLipiNormal.svg#SolaimanLipiNormal') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'HacenLiner';
+  src: url('../font/HacenLinerScreen/HacenLinerScreen.eot?#iefix') format('embedded-opentype'),  
+     url('../font/HacenLinerScreen/HacenLinerScreen.woff') format('woff'), 
+     url('../font/HacenLinerScreen/HacenLinerScreen.ttf')  format('truetype'), 
+     url('../font/HacenLinerScreen/HacenLinerScreen.svg#HacenLinerScreen') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face{ 
 	font-family: 'Vazir';
 	src: url('../font/vazir/Vazir.eot');
@@ -36,12 +56,12 @@ body{
 		font-family: 'SolaimanLipiNormal',@fontFamily;
 	}
 	&.lang-arabic{
-		font-family: 'NotoNaskhArabic',@fontFamily;
+		font-family: 'HacenLiner',@fontFamily;
 	}
 	&.lang-russian, &.lang-german{
 		font-family: 'NotoSerif',@fontFamily;
 	}
-	&.lang-persian{
+	&.lang-persian, &.lang-dari{
 		font-family:'Vazir',@fontFamily;
 	}
 }

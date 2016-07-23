@@ -853,6 +853,9 @@
                     .title{
                         color: @text-color; font-size: 18px;
                     }
+                    .desc{
+                        color: @text-color; font-size: 14px;
+                    }
                     .date{
                         float: right; color: lighten(@text-color, 40%); font-size: 11px; line-height: 1; padding-top: 7px;
                         &[class*=" icon-"], &[class^=icon-]{
@@ -906,6 +909,123 @@
                     }
                 }
             }
+        }
+        &.special{
+            .panel-body{
+                .item{
+                    padding: 0;
+                    float: left;
+                    figure{margin: 0;}
+                    article{
+                        height: 70px; // size * line-height * 2 + ((line-height * size - size) / 2 )
+                        .title{
+                            font-size: 20px;
+                            line-height: 1.4;
+                            min-height: 70px;
+                        }
+                        .desc{.text-ellipsis(15px, 5);}
+                    }
+                    /* one item */
+                    &:first-child:nth-last-child(1) {
+                        width: percentage((10 / @grid-columns));
+                        float: none;
+                        figure{
+                            width: 50%;
+                            float: left;
+                            padding-right: 10px;
+                        }
+                        article{
+                            width: 50%;
+                            float: left;
+                            padding: 10px 15px;
+                            .title{
+                                margin-bottom: 10px;
+                                font-weight: bold;
+                                min-height: auto;
+                            }
+                            .date{
+                                color: @text-color;
+                            }
+                        }
+                    }
+
+                    /* two items */
+                    &:first-child:nth-last-child(2),
+                    &:first-child:nth-last-child(2) ~ .item {
+                        position: relative;
+                        width: 50%;
+                        &:last-child{
+                            padding-left: 10px;
+                            article{margin-left: 10px;}
+                        }
+                        &:first-child{
+                            padding-right: 10px;
+                            article{margin-right: 10px;}
+                        }
+                        article{
+                            position: absolute; bottom: 0; left: 0; padding: 10px 15px; overflow: hidden; background: rgba(255, 255, 255, 0.6); .transition(all .6s cubic-bezier(0.19,1,.22,1));
+                            .date{
+                                color: @text-color;
+                            }
+                            &:hover{
+                                height:80%;
+                                background: rgba(255, 255, 255, 0.8);
+                            }
+                        }
+                    }
+
+                    /* three items */
+                    &:first-child:nth-last-child(3),
+                    &:first-child:nth-last-child(3) ~ .item {
+                        position: relative;
+                        width: 50%;
+                        &:nth-child(2){margin-bottom: 10px;}
+                        &:nth-child(n+2){
+                            padding: 0 10px;
+                            figure{
+                                width: 50%;
+                                float: left;
+                                padding-right: 10px;
+                            }
+                            article{
+                                width: 50%;
+                                float: left;
+                                padding: 0 10px;
+                                .title{
+                                    font-size: 18px;
+                                    margin-bottom: 10px;
+                                    font-weight: bold;
+                                    min-height: auto;
+                                }
+                                .desc{
+                                    .text-ellipsis(14px, 3);
+                                }
+                            }
+                        }
+                        &:first-child{
+                            padding-right: 10px;
+                            article{
+                                margin-right: 10px;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                padding: 10px 15px;
+                                overflow: hidden;
+                                background: rgba(255, 255, 255, 0.6);
+                                .transition(all .6s cubic-bezier(0.19,1,.22,1));
+                                .date{
+                                    color: @text-color;
+                                }
+                                &:hover{
+                                    height:80%;
+                                    background: rgba(255, 255, 255, 0.8);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
     &.wslider{
