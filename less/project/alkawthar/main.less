@@ -8,17 +8,26 @@
     background: url('../img/alkawthartv-logo.png') no-repeat 0 0 transparent;
     background-size: 180px 77px;
 }
-#menu ul li{
-	a{
-		border-top: 3px solid transparent;
-		border-bottom: 0;
-		color: #FFF;
-	}
-	&.active>a, &:hover>a{
-		border-top-color: @style-color2;
-		border-top-color: @style-color2;
+.header-menu{
+	font-size: 20px;
+	li.onair a{
+		font-size: 14px;
 	}
 }
+#menu{
+	font-size: 18px; height: 52px;
+	ul li{
+		a{
+			border-top: 3px solid transparent;
+			border-bottom: 0;
+			color: #FFF;
+		}
+		&.active>a, &:hover>a{
+			border-top-color: @style-color2;
+			border-top-color: @style-color2;
+		}
+	}
+} 
 .lang-select{
 	display: none;
 }
