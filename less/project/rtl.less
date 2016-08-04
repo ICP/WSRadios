@@ -112,14 +112,18 @@ body.rtl {
             &.list-condensed {
                 ul li {
                     .img { float: right; clear: right; }
-                    .desc { margin-left: 0; margin-right: 109px; }
+                    .desc { margin-left: 0;}
                 }
             }
             ul li {
-                .img { float: right; clear: right; }
-                .desc { margin-left: 0; margin-right: 188px; }
+                // &:nth-child(2n + 2) { padding-right: 0; padding-left: (@grid-gutter-width / 2); }
+                // &:nth-child(2n + 3) { padding-left: 0; padding-right: (@grid-gutter-width / 2); }
+                .img { float: right; clear: right; padding-right: 0; padding-left: (@grid-gutter-width / 2); }
+                .desc { margin-left: 0; padding-left: 0; padding-right: (@grid-gutter-width / 2); float: right; width: 50%; }
                 &.featured {
-                    .desc { margin-right: (@xLargeMainHalf) + (@grid-gutter-width / 2); margin-left: 0; }
+                    .img{ float: right; }
+                    .desc { float: right; margin-left: 0;}
+
                 }
             }
         }
