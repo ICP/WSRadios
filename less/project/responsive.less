@@ -1,3 +1,4 @@
+// main: ../style.less
 @media (max-width: @screen-md-max){
     .wrapper { width: 100%; }
     .panel {
@@ -150,7 +151,7 @@
         .toggle-search { display: none; }
     }
     .panel {
-        &.tabs .panel-title ul { 
+        &.tabs .panel-title ul {
             height: auto;
             li a{
                 margin-bottom: -1px;
@@ -259,7 +260,7 @@
             .panel-body { margin-left: 0; }
         }
         &.top-news {
-            .item { 
+            .item {
                 border-bottom: 0 none;
                 .img figcaption h2{
                     .text-ellipsis(20px, 3);
@@ -270,11 +271,11 @@
                     li{
                         width: 50%; margin-top: @grid-gutter-width / 2;
                         &:nth-child(2n){
-                            padding-left: @grid-gutter-width / 4;      
+                            padding-left: @grid-gutter-width / 4;
                         }
                         &:nth-child(2n+1){
                             padding-right: @grid-gutter-width / 4;
-                            clear: both;    
+                            clear: both;
                         }
                         &:before, &:active:before, &:hover:before{
                             display: none !important;
@@ -382,6 +383,9 @@
                                 .title{
                                     min-height: auto; margin-bottom: 10px; font-weight: bold;
                                 }
+                                &:hover{
+                                    background: transparent;
+                                }
                             }
                             margin-bottom: 20px;
 
@@ -395,6 +399,9 @@
                                 position: relative; background: transparent; padding: 10px 0; margin: 0; overflow: visible; height: auto;
                                 .title{
                                     min-height: auto; margin-bottom: 10px; font-weight: bold;
+                                }
+                                &:hover{
+                                    background: transparent;
                                 }
                             }
                             margin-bottom: 20px;
@@ -423,11 +430,32 @@
             .row > div{
                 .panel {
                     margin-bottom: @grid-gutter-width * 2.5;
-                } 
+                }
                 &:last-child .panel{
                     margin-bottom: 0;
                 }
-            } 
-        } 
+            }
+        }
+    }
+
+
+    body.rtl{
+      .panel.wrench.special .panel-body .item{
+
+        /* three item */
+        &:first-child:nth-last-child(3),
+        &:first-child:nth-last-child(3) ~ .item {
+          &:first-child{
+            padding: 0 10px !important;
+            article{
+              // margin-right: 0px; margin-left: 10px;
+            }
+          }
+
+        }
+
+
+
+      }
     }
 }

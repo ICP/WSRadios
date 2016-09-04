@@ -1,4 +1,4 @@
-
+// main: ../style.less
 .rtl-float-grid-columns(xs);
 
 
@@ -116,8 +116,6 @@ body.rtl {
                 }
             }
             ul li {
-                // &:nth-child(2n + 2) { padding-right: 0; padding-left: (@grid-gutter-width / 2); }
-                // &:nth-child(2n + 3) { padding-left: 0; padding-right: (@grid-gutter-width / 2); }
                 .img { float: right; clear: right; padding-right: 0; padding-left: (@grid-gutter-width / 2); }
                 .desc { margin-left: 0; padding-left: 0; padding-right: (@grid-gutter-width / 2); float: right; width: 50%; }
                 &.featured {
@@ -222,16 +220,41 @@ body.rtl {
                     /* one item */
                     &:first-child:nth-last-child(1) {
                         float: none;
-                        figure, article{
+                        figure{
+                          float: right; padding-right: 0px; padding-left: 10px;
+                        }
+                        article{
                             float: right;
                         }
+                    }
+                    /* two items */
+                    &:first-child:nth-last-child(2),
+                    &:first-child:nth-last-child(2) ~ .item {
+                      &:last-child{
+                          padding-left: 0px; padding-right: 10px;
+                          article{margin-left: 0px; margin-right: 10px;}
+                      }
+                      &:first-child{
+                          padding-right: 0px; padding-left: 10px;
+                          article{margin-right: 0px; margin-left: 10px;}
+                      }
+
                     }
                     /* three item */
                     &:first-child:nth-last-child(3),
                     &:first-child:nth-last-child(3) ~ .item {
                         &:nth-child(n+2){
-                            figure, article{
+                            figure{
+                              float: right; padding-right: 0px; padding-left: 10px;
+                            }
+                            article{
                                 float: right;
+                            }
+                        }
+                        &:first-child{
+                          padding-right: 0px; padding-left: 10px;
+                          article{
+                              margin-right: 0px; margin-left: 10px;
                             }
                         }
                     }
